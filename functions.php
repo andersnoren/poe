@@ -10,6 +10,8 @@ if ( ! function_exists( 'poe_setup' ) ) :
 		load_theme_textdomain( 'poe', get_template_directory() . '/languages' );
 		set_post_thumbnail_size( 1792, 9999 );
 
+		add_theme_support( 'editor-styles' );
+
 	}
 	add_action( 'after_setup_theme', 'poe_setup' );
 endif;
@@ -22,14 +24,12 @@ endif;
 if ( ! function_exists( 'poe_styles' ) ) :
 	function poe_styles() {
 
-		wp_register_style( 'poe-styles-shared', 		get_template_directory_uri() . '/assets/css/shared.css' );
-		wp_register_style( 'poe-styles-blocks', 		get_template_directory_uri() . '/assets/css/blocks.css' );
+		wp_register_style( 'poe-styles-shared', get_template_directory_uri() . '/assets/css/shared.css' );
+		wp_register_style( 'poe-styles-blocks', get_template_directory_uri() . '/assets/css/blocks.css' );
 
 		$dependencies = apply_filters( 'poe_style_dependencies', array( 'poe-styles-shared', 'poe-styles-blocks' ) );
 
 		wp_enqueue_style( 'poe-styles-front-end', get_template_directory_uri() . '/assets/css/front-end.css', $dependencies, wp_get_theme( 'Poe' )->get( 'Version' ) );
-
-		error_log( poe_get_font_face_styles() );
 
 		wp_add_inline_style( 'poe-styles-front-end', poe_get_font_face_styles() );
 
