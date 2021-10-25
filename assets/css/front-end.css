@@ -134,46 +134,6 @@ input[type="search"]::-webkit-search-results-decoration {
 
 /* BUTTONS */
 
-button,
-.button,
-input[type="button"],
-input[type="reset"],
-input[type="submit"],
-:root .wp-block-file__button {
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	background: var( --wp--preset--color--primary );
-	border-radius: 0;
-	color: var( --wp--preset--color--foreground );
-	cursor: pointer;
-	display: inline-flex;
-	font-size: var( --wp--preset--font-size--small );
-	font-weight: var( --wp--custom--typography--font-weight--bold );
-	justify-content: center;
-	line-height: 1.25;
-	margin: 0;
-	padding: .833em 1.33em;
-	text-align: center;
-	text-decoration: none;
-	text-underline-offset: .25em;
-	text-decoration-thickness: 1px;
-}
-
-button:hover,
-.button:hover,
-input[type="button"]:hover,
-input[type="reset"]:hover,
-input[type="submit"]:hover,
-:root .wp-block-file__button:hover,
-button:focus,
-.button:focus,
-input[type="button"]:focus,
-input[type="reset"]:focus,
-input[type="submit"]:focus,
-:root .wp-block-file__button:focus {
-	text-decoration: underline;
-}
-
 
 /* ------------------------------------------- */
 /*	Alignments

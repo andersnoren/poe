@@ -327,7 +327,8 @@
 			},
 			"core/button": {
 				"border": {
-					"radius": "0"
+					"radius": "0",
+					"width": "0px"
 				},
 				"color": {
 					"background": "var(--wp--preset--color--primary)",

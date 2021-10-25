@@ -55,6 +55,7 @@
 .wp-block-button__link.is-style-poe-arrow:after {
 	content: "⟶";
 	display: inline-block;
+	font-weight: 300;
 	margin-left: 0.5em;
 	text-decoration: none;
 }
