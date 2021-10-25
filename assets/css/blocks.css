@@ -872,7 +872,7 @@ p.has-background {
 .wp-block-search .wp-block-search__label {
 	display: block;
 	font-size: var( --wp--preset--font-size--small );
-	font-weight: var( --wp--custom--typography--font-weight--normal );
+	font-weight: var( --wp--custom--typography--font-weight--regular );
 	margin: 0 0 calc( .5 * var( --wp--custom--spacing--baseline ) ) 0;
 }
 

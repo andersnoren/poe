@@ -29,7 +29,7 @@ body {
 	font-size: var( --wp--preset--font-size--heading-1 );
 	line-height: var( --wp--custom--typography--line-height--heading );
 	letter-spacing: var( --wp--custom--typography--letter-spacing--heading );
-	font-weight: var( --wp--custom--typography--font-weight--normal );
+	font-weight: var( --wp--custom--typography--font-weight--regular );
 	text-align: center;
 }
 

@@ -18,8 +18,8 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
 == Licenses ==
 
-Poe is derived from the TT1 Blocks theme, Copyright (c) 2020 WordPress.org. 
-TT1 Blocks is distributed under the terms of the GNU GPL version 2.0.
+Poe is derived from the Tove theme, Copyright (c) 2021 Anders Norén.
+Tove is distributed under the terms of the GNU GPL version 2.0.
 
 Screenshot assets: Coffee cup logo, hero image and illustrations by Anders Norén
 License: Creative Commons Zero (CC0), https://creativecommons.org/publicdomain/zero/1.0/
@@ -36,13 +36,6 @@ Poe bundles the following third-party resources:
 DM Sans font
 License: SIL Open Font License, 1.1, https://opensource.org/licenses/OFL-1.1
 Source: https://fonts.google.com/specimen/DM+Sans/
-
-Code from Blockbase
-Copyright (c) 2021 Automattic Inc.
-License: GPLv2, https://www.gnu.org/licenses/gpl-2.0.html
-Source: https://wordpress.org/themes/blockbase/
-Included as part of:
-	- poe_get_google_fonts_url(), for building a Google Fonts request URL from fonts set in theme.json
 
 == Special Thanks ==
 

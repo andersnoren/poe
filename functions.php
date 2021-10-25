@@ -22,13 +22,15 @@ endif;
 if ( ! function_exists( 'poe_styles' ) ) :
 	function poe_styles() {
 
-		wp_register_style( 'poe-styles-google-fonts', 	poe_get_google_fonts_url() );
 		wp_register_style( 'poe-styles-shared', 		get_template_directory_uri() . '/assets/css/shared.css' );
 		wp_register_style( 'poe-styles-blocks', 		get_template_directory_uri() . '/assets/css/blocks.css' );
 
-		$dependencies = apply_filters( 'poe_style_dependencies', array( 'poe-styles-shared', 'poe-styles-blocks', 'poe-styles-google-fonts' ) );
+		$dependencies = apply_filters( 'poe_style_dependencies', array( 'poe-styles-shared', 'poe-styles-blocks' ) );
+
+		wp_add_inline_style( 'poe-styles-front-end', poe_get_font_face_styles() );
 
 		wp_enqueue_style( 'poe-styles-front-end', get_template_directory_uri() . '/assets/css/front-end.css', $dependencies, wp_get_theme( 'Poe' )->get( 'Version' ) );
+
 
 	}
 	add_action( 'wp_enqueue_scripts', 'poe_styles' );
@@ -36,57 +38,35 @@ endif;
 
 
 /*	-----------------------------------------------------------------------------------------------
-	ENQUEUE EDITOR STYLES
---------------------------------------------------------------------------------------------------- */
-
-if ( ! function_exists( 'poe_editor_styles' ) ) :
-	function poe_editor_styles() {
-
-		add_editor_style( array( 
-			'./assets/css/editor.css',
-			'./assets/css/blocks.css',
-			'./assets/css/shared.css',
-			poe_get_google_fonts_url()
-		) );
-
-	}
-	add_action( 'admin_init', 'poe_editor_styles' );
-endif;
-
-
-/*	-----------------------------------------------------------------------------------------------
-	GET GOOGLE FONTS URL
+	GET FONT FACE STYLES
 	Builds a Google Fonts request URL from the Google Fonts families used in theme.json.
 	Based on a solution in the Blockbase theme (see readme.txt for licensing info).
  
- 	@return $fonts_url
+ 	@return $font_face_styles
 --------------------------------------------------------------------------------------------------- */
 
-if ( ! function_exists( 'poe_get_google_fonts_url' ) ) : 
-	function poe_get_google_fonts_url() {
+if ( ! function_exists( 'poe_get_font_face_styles' ) ) :
+	function poe_get_font_face_styles() {
 
-		if ( ! class_exists( 'WP_Theme_JSON_Resolver_Gutenberg' ) ) return '';
-
-		$theme_data = WP_Theme_JSON_Resolver_Gutenberg::get_merged_data()->get_settings();
-
-		if ( empty( $theme_data['typography']['fontFamilies'] ) ) return '';
-
-		$theme_families 	= ! empty( $theme_data['typography']['fontFamilies']['theme'] ) ? $theme_data['typography']['fontFamilies']['theme'] : array();
-		$user_families 		= ! empty( $theme_data['typography']['fontFamilies']['user'] ) ? $theme_data['typography']['fontFamilies']['user'] : array();
-		$font_families 		= array_merge( $theme_families, $user_families );
-
-		if ( ! $font_families ) return '';
-
-		$font_family_urls = array();
-
-		foreach ( $font_families as $font_family ) {
-			if ( ! empty( $font_family['google'] ) ) $font_family_urls[] = $font_family['google'];
+		return "
+		@font-face{
+			font-family: Inter;
+			font-weight: 100 900;
+			font-display: swap;
+			font-style: normal;
+			font-named-instance: 'Regular';
+			src: url('" . get_theme_file_uri( 'assets/fonts/inter/Inter.var.woff2?v=3.19' ) . "') format('woff2');
 		}
 
-		if ( ! $font_family_urls ) return '';
-
-		// Return a single request URL for all of the font families.
-		return apply_filters( 'poe_google_fonts_url', esc_url_raw( 'https://fonts.googleapis.com/css2?' . implode( '&', $font_family_urls ) . '&display=swap' ) );
+		@font-face{
+			font-family: Inter;
+			font-weight: 100 900;
+			font-display: swap;
+			font-style: italic;
+			font-named-instance: 'Italic';
+			src: url('" . get_theme_file_uri( 'assets/fonts/inter/Inter-italic.var.woff2?v=3.19' ) . "') format('woff2');
+		}
+		";
 
 	}
 endif;
@@ -353,7 +333,7 @@ if ( ! function_exists( 'poe_register_block_styles' ) ) :
 	function poe_register_block_styles() {
 
 		if ( ! function_exists( 'register_block_style' ) ) return;
-		
+
 		// Button: Arrow
 		register_block_style( 'core/button', array(
 			'name'  	=> 'poe-arrow',
