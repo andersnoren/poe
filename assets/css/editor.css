@@ -1,0 +1,94 @@
+/* ------------------------------------------- */
+/*	Structure
+/* ------------------------------------------- */
+
+
+body {
+	padding: 0;
+}
+
+ > .is-root-container:not(.wp-site-blocks) > .wp-block:not([data-align="full"]):not([data-align="left"]):not([data-align="right"]) {
+	margin-left: auto;
+	margin-right: auto;
+	width: calc( 100% - ( 2 * var( --wp--custom--gutter ) ) );
+}
+
+
+/* ------------------------------------------- */
+/*	Post Title
+/* ------------------------------------------- */
+
+
+.edit-post-visual-editor__post-title-wrapper .editor-post-title {
+	margin-bottom: calc( 2 * var( --wp--custom--spacing--baseline ) );
+	max-width: calc( 100% - ( 2 * var( --wp--custom--gutter ) ) );
+	text-align: center;
+}
+
+.editor-post-title .editor-post-title__input {
+	font-size: var( --wp--preset--font-size--heading-1 );
+	line-height: var( --wp--custom--typography--line-height--heading );
+	letter-spacing: var( --wp--custom--typography--letter-spacing--heading );
+	font-weight: var( --wp--custom--typography--font-weight--normal );
+	text-align: center;
+}
+
+@media ( min-width: 700px ) {
+
+	.edit-post-visual-editor__post-title-wrapper .editor-post-title {
+		margin-bottom: calc( 4 * var( --wp--custom--spacing--baseline ) );
+	}
+
+}
+
+
+/* ------------------------------------------- */
+/*	Blocks
+/* ------------------------------------------- */
+
+
+/* Block: Button ------------------- */
+
+.wp-block-button:not(.has-text-color):not(.is-style-outline) [data-rich-text-placeholder]:after {
+	color: inherit;
+}
+
+/* Block: Image -------------------- */
+
+:root .wp-block.wp-block-image figcaption {
+	margin-top: 0;
+}
+
+/* Block: Post Featured Image ------ */
+
+:root .wp-block-post-featured-image.wp-block-post-featured-image {
+	margin-bottom: calc( 2 * var( --wp--custom--spacing--baseline ) );
+	margin-top: calc( 2 * var( --wp--custom--spacing--baseline ) );
+}
+
+/* Block: Table -------------------- */
+
+figure.wp-block-table {
+	padding-top: 1px;
+}
+
+/* Block: Query Loop --------------- */
+
+.wp-block-query li .block-editor-block-list__layout > *:first-child { margin-top: 0; }
+.wp-block-query li .block-editor-block-list__layout > *:last-child { margin-bottom: 0; }
+
+
+/* ------------------------------------------- */
+/*	Alignments
+/* ------------------------------------------- */
+
+
+@media ( min-width: 700px ) {
+
+	.wp-block[data-align="wide"],
+	.wp-block[data-align="full"] {
+		margin-bottom: calc( 4 * var( --wp--custom--spacing--baseline ) );
+		margin-top: calc( 4 * var( --wp--custom--spacing--baseline ) );
+	}
+
+}
