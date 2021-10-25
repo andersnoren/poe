@@ -27,13 +27,34 @@ if ( ! function_exists( 'poe_styles' ) ) :
 
 		$dependencies = apply_filters( 'poe_style_dependencies', array( 'poe-styles-shared', 'poe-styles-blocks' ) );
 
-		wp_add_inline_style( 'poe-styles-front-end', poe_get_font_face_styles() );
-
 		wp_enqueue_style( 'poe-styles-front-end', get_template_directory_uri() . '/assets/css/front-end.css', $dependencies, wp_get_theme( 'Poe' )->get( 'Version' ) );
 
+		error_log( poe_get_font_face_styles() );
+
+		wp_add_inline_style( 'poe-styles-front-end', poe_get_font_face_styles() );
 
 	}
 	add_action( 'wp_enqueue_scripts', 'poe_styles' );
+endif;
+
+
+/*	-----------------------------------------------------------------------------------------------
+	ENQUEUE EDITOR STYLES
+--------------------------------------------------------------------------------------------------- */
+
+if ( ! function_exists( 'poe_editor_styles' ) ) :
+	function poe_editor_styles() {
+
+		add_editor_style( array( 
+			'./assets/css/editor.css',
+			'./assets/css/blocks.css',
+			'./assets/css/shared.css'
+		) );
+
+		wp_add_inline_style( 'wp-block-library', poe_get_font_face_styles() );
+
+	}
+	add_action( 'admin_init', 'poe_editor_styles' );
 endif;
 
 
@@ -55,7 +76,7 @@ if ( ! function_exists( 'poe_get_font_face_styles' ) ) :
 			font-display: swap;
 			font-style: normal;
 			font-named-instance: 'Regular';
-			src: url('" . get_theme_file_uri( 'assets/fonts/inter/Inter.var.woff2?v=3.19' ) . "') format('woff2');
+			src: url('" . get_theme_file_uri( 'assets/fonts/inter/Inter-roman.var.woff2?v=3.19' ) . "') format('woff2');
 		}
 
 		@font-face{
