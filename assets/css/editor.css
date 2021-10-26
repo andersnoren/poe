@@ -28,7 +28,7 @@ body {
 .editor-post-title .editor-post-title__input {
 	font-size: var( --wp--preset--font-size--heading-1 );
 	line-height: var( --wp--custom--typography--line-height--heading );
-	letter-spacing: var( --wp--custom--typography--letter-spacing--heading );
+	letter-spacing: var( --wp--custom--typography--letter-spacing--headings--large );
 	font-weight: var( --wp--custom--typography--font-weight--regular );
 	text-align: center;
 }
