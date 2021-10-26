@@ -48,6 +48,7 @@
 .wp-block-button__link.is-style-poe-arrow {
 	background-color: transparent;
 	color: var( --wp--preset--color--primary );
+	font-weight: inherit;
 	padding: 0;
 }
 
@@ -58,6 +59,15 @@
 	font-weight: 300;
 	margin-left: 0.5em;
 	text-decoration: none;
+}
+
+/* STYLE: UPPERCASE */
+
+.is-style-poe-uppercase > .wp-block-button__link,
+.wp-block-button__link.is-style-poe-uppercase {
+	font-weight: 600;
+	letter-spacing: var( --wp--custom--typography--letter-spacing--uppercase );
+	text-transform: uppercase;
 }
 
 

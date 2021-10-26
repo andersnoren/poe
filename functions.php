@@ -362,6 +362,12 @@ if ( ! function_exists( 'poe_register_block_styles' ) ) :
 			'label' 	=> esc_html__( 'Arrow', 'poe' ),
 		) );
 
+		// Button: Uppercase
+		register_block_style( 'core/button', array(
+			'name'  	=> 'poe-uppercase',
+			'label' 	=> esc_html__( 'Uppercase', 'poe' ),
+		) );
+
 		// Columns: Separators
 		register_block_style( 'core/columns', array(
 			'name'  	=> 'poe-horizontal-separators',
