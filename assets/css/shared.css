@@ -131,15 +131,6 @@ cite {
 	margin-top: 1em;
 }
 
-/* Separator ----------------------- */
-
-hr {
-	background-color: var( --wp--preset--color--foreground );
-	border: none !important;
-	height: 2px;
-	opacity: 1;
-}
-
 /* Tables -------------------------- */
 
 table {
@@ -227,6 +218,10 @@ caption {
 /*	Typography
 /* ------------------------------------------- */
 
+
+[class*="has-heading-"][class*="-font-size"] {
+	line-height: var( --wp--custom--typography--line-height--heading );
+}
 
 .has-heading-1-font-size,
 .has-heading-2-font-size,

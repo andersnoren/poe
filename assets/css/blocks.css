@@ -222,10 +222,6 @@
 /* ------------------------------------------- */
 
 
-.wp-block-post-featured-image a {
-	display: block;
-}
-
 .wp-block-post-featured-image img {
 	margin: 0 auto;
 }
@@ -292,7 +288,7 @@ main.wp-block-group {
 :root .wp-block-group > *:last-child { margin-bottom: 0; }
 
 :root .wp-block-group.has-background {
-	padding: var( --wp--custom--inner-container-spacing );
+	padding: var( --wp--custom--spacing--inner-container );
 }
 
 
@@ -418,7 +414,7 @@ h6.has-background.has-text-align-right {
 
 
 .wp-block-media-text .wp-block-media-text__content {
-	padding: var( --wp--custom--inner-container-spacing );
+	padding: var( --wp--custom--spacing--inner-container );
 }
 
 .wp-block-media-text:not(.has-background):not(.is-stacked-on-mobile) .wp-block-media-text__content {
@@ -571,7 +567,7 @@ h6.has-background.has-text-align-right {
 
 
 p.has-background {
-	padding: var( --wp--custom--inner-container-spacing );
+	padding: var( --wp--custom--spacing--inner-container );
 }
 
 /* Drop Cap ------------------------ */
@@ -902,18 +898,9 @@ p.has-background {
 
 
 :root hr.wp-block-separator {
-	background-color: currentColor;
-	width: 100px;
+	border-width: 0 0 1px 0;
 }
 
-:root .wp-block-separator.is-style-wide,
-:root .wp-block-separator.is-style-dots {
-	width: 100%;
-}
-
-.wp-block-separator.has-background:not(.is-style-dots) {
-	height: 2px;
-}
 
 
 /* ------------------------------------------- */
@@ -1020,7 +1007,7 @@ figure.wp-block-table table {
 
 :root .wp-block-template-part.has-background {
 	margin: 0;
-	padding: var( --wp--custom--inner-container-spacing ) var( --wp--custom--spacing--gutter );
+	padding: var( --wp--custom--spacing--inner-container ) var( --wp--custom--spacing--gutter );
 }
 
 :root .wp-block-template-part.has-background > *:first-child,

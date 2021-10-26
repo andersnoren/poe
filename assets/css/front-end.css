@@ -9,14 +9,6 @@ html, body {
 	padding: 0;
 }
 
-*,
-*:before,
-*:after {
-		-webkit-box-sizing: inherit;
-		-moz-box-sizing: inherit;
-	box-sizing: inherit;
-}
-
 *:focus:not(:focus-visible) {
 	outline: none;
 }
