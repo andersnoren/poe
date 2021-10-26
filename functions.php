@@ -10,6 +10,7 @@ if ( ! function_exists( 'poe_setup' ) ) :
 		load_theme_textdomain( 'poe', get_template_directory() . '/languages' );
 		set_post_thumbnail_size( 1792, 9999 );
 
+		add_theme_support( 'post-thumbnails' );
 		add_theme_support( 'editor-styles' );
 
 	}

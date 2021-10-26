@@ -1,32 +1,4 @@
 /* ------------------------------------------- */
-/*	CSS Variables
-/* ------------------------------------------- */
-
-body {
-	--wp--custom--gutter: calc( 1.5 * var( --wp--custom--spacing--baseline ) );
-	--wp--custom--inner-container-spacing: var( --wp--custom--gutter );
-}
-
-@media ( min-width: 400px ) {
-	body {
-		--wp--custom--gutter: calc( 2 * var( --wp--custom--spacing--baseline ) );
-	}
-}
-
-@media ( min-width: 1000px ) {
-	body {
-		--wp--custom--gutter: calc( 3 * var( --wp--custom--spacing--baseline ) );
-	}
-}
-
-@media ( min-width: 1200px ) {
-	body {
-		--wp--custom--gutter: calc( 4 * var( --wp--custom--spacing--baseline ) );
-	}
-}
-
-
-/* ------------------------------------------- */
 /*	Document Setup
 /* ------------------------------------------- */
 
@@ -57,7 +29,7 @@ a:hover {
 .wp-site-blocks > [class*="wp-container-"] > :not(.alignfull):not([data-align="full"]) {
 	margin-left: auto;
 	margin-right: auto;
-	width: calc( 100% - ( 2 * var( --wp--custom--gutter ) ) ) !important;
+	width: calc( 100% - ( 2 * var( --wp--custom--spacing--gutter ) ) ) !important;
 }
 
 
@@ -269,12 +241,8 @@ caption {
 /* ------------------------------------------- */
 
 
-*[class*="has-heading-"][class*="-font-size"] {
-	letter-spacing: var( --wp--custom--typography--letter-spacing--heading );
-}
-
 .has-gigantic-font-size {
-	letter-spacing: var( --wp--custom--typography--letter-spacing--gigantic );
+	letter-spacing: var( --wp--custom--typography--letter-spacing--headings--large );
 	line-height: var( --wp--custom--typography--line-height--gigantic );
 }
 

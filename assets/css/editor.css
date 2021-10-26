@@ -10,7 +10,7 @@ body {
  > .is-root-container:not(.wp-site-blocks) > .wp-block:not([data-align="full"]):not([data-align="left"]):not([data-align="right"]) {
 	margin-left: auto;
 	margin-right: auto;
-	width: calc( 100% - ( 2 * var( --wp--custom--gutter ) ) );
+	width: calc( 100% - ( 2 * var( --wp--custom--spacing--gutter ) ) );
 }
 
 
@@ -21,7 +21,7 @@ body {
 
 .edit-post-visual-editor__post-title-wrapper .editor-post-title {
 	margin-bottom: calc( 2 * var( --wp--custom--spacing--baseline ) );
-	max-width: calc( 100% - ( 2 * var( --wp--custom--gutter ) ) );
+	max-width: calc( 100% - ( 2 * var( --wp--custom--spacing--gutter ) ) );
 	text-align: center;
 }
 
