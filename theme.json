@@ -392,6 +392,11 @@
 					}
 				}
 			},
+			"core/navigation": {
+				"spacing": {
+					"blockGap": "var( --wp--custom--spacing--gap--horizontal )"
+				}
+			},
 			"core/paragraph": {
 				"spacing": {
 					"blockGap": "1em"
