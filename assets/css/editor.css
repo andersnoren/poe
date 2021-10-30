@@ -76,19 +76,3 @@ figure.wp-block-table {
 
 .wp-block-query li .block-editor-block-list__layout > *:first-child { margin-top: 0; }
 .wp-block-query li .block-editor-block-list__layout > *:last-child { margin-bottom: 0; }
-
-
-/* ------------------------------------------- */
-/*	Alignments
-/* ------------------------------------------- */
-
-
-@media ( min-width: 700px ) {
-
-	.wp-block[data-align="wide"],
-	.wp-block[data-align="full"] {
-		margin-bottom: calc( 4 * var( --wp--custom--spacing--baseline ) );
-		margin-top: calc( 4 * var( --wp--custom--spacing--baseline ) );
-	}
-
-}

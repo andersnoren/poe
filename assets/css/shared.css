@@ -207,6 +207,19 @@ caption {
 /* ------------------------------------------- */
 
 
+:root .alignwide,
+:root .alignfull,
+.wp-block[data-align="wide"],
+.wp-block[data-align="full"] {
+	margin-bottom: clamp( calc( 3 * var( --wp--custom--spacing--baseline ) ), 6.666vw, calc( 6 * var( --wp--custom--spacing--baseline ) ) );
+	margin-top: clamp( calc( 3 * var( --wp--custom--spacing--baseline ) ), 6.666vw, calc( 6 * var( --wp--custom--spacing--baseline ) ) );
+}
+
+:root .alignleft { margin: 3px calc( 1.5 * var( --wp--custom--spacing--baseline ) ) calc( 1.5 * var( --wp--custom--spacing--baseline ) ) 0; }
+:root .alignright { margin: 3px 0 calc( 1.5 * var( --wp--custom--spacing--baseline ) ) calc( 1.5 * var( --wp--custom--spacing--baseline ) ); }
+
+
+
 :root .wp-block[data-align="full"] > * > figcaption,
 :root .alignfull > figcaption {
 	padding-left: var( --wp--custom--spacing--baseline );

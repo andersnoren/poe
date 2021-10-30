@@ -36,13 +36,27 @@
 
 		<!-- wp:group {"layout":{"inherit":true}} -->
 		<div class="wp-block-group">
-			<!-- wp:query-pagination {"align":"wide","className":"alignwide is-style-default"} -->
-			<div class="wp-block-query-pagination alignwide is-style-default">
-				<!-- wp:query-pagination-previous {"fontSize":"large"} /-->
+			<!-- wp:group {"align":"wide"} -->
+			<div class="wp-block-group alignwide">
+				<!-- wp:separator {"color":"tertiary","className":"is-style-wide"} -->
+				<hr class="wp-block-separator has-text-color has-background has-tertiary-background-color has-tertiary-color is-style-wide" />
+				<!-- /wp:separator -->
 
-				<!-- wp:query-pagination-next {"fontSize":"large"} /-->
+				<!-- wp:group {"style":{"spacing":{"padding":{"top":"1em","bottom":"1em"}}}} -->
+				<div class="wp-block-group" style="padding-top:1em;padding-bottom:1em">
+					<!-- wp:query-pagination {"paginationArrow":"arrow"} -->
+					<!-- wp:query-pagination-previous {"fontSize":"large"} /-->
+
+					<!-- wp:query-pagination-next {"fontSize":"large"} /-->
+					<!-- /wp:query-pagination -->
+				</div>
+				<!-- /wp:group -->
+
+				<!-- wp:separator {"color":"tertiary","className":"is-style-wide"} -->
+				<hr class="wp-block-separator has-text-color has-background has-tertiary-background-color has-tertiary-color is-style-wide" />
+				<!-- /wp:separator -->
 			</div>
-			<!-- /wp:query-pagination -->
+			<!-- /wp:group -->
 		</div>
 		<!-- /wp:group -->
 	</div>

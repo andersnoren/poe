@@ -370,18 +370,6 @@ if ( ! function_exists( 'poe_register_block_styles' ) ) :
 			'name'  	=> 'poe-horizontal-separators',
 			'label' 	=> esc_html__( 'Horizontal Separators', 'poe' ),
 		) );
-
-		// Query Pagination: Vertical separators
-		register_block_style( 'core/query-pagination', array(
-			'name'  	=> 'poe-vertical-separators',
-			'label' 	=> esc_html__( 'Vertical Separators', 'poe' ),
-		) );
-
-		// Query Pagination: Top separator
-		register_block_style( 'core/query-pagination', array(
-			'name'  	=> 'poe-top-separator',
-			'label' 	=> esc_html__( 'Top Separator', 'poe' ),
-		) );
 		
 	}
 	add_action( 'init', 'poe_register_block_styles' );

@@ -123,20 +123,3 @@ input[type="search"]::-webkit-search-results-button,
 input[type="search"]::-webkit-search-results-decoration {
 	display: none;
 }
-
-/* BUTTONS */
-
-
-/* ------------------------------------------- */
-/*	Alignments
-/* ------------------------------------------- */
-
-
-:root .alignwide,
-:root .alignfull {
-	margin-bottom: clamp( calc( 3 * var( --wp--custom--spacing--baseline ) ), 6.666vw, calc( 6 * var( --wp--custom--spacing--baseline ) ) );
-	margin-top: clamp( calc( 3 * var( --wp--custom--spacing--baseline ) ), 6.666vw, calc( 6 * var( --wp--custom--spacing--baseline ) ) );
-}
-
-:root .alignleft { margin: 3px calc( 1.5 * var( --wp--custom--spacing--baseline ) ) calc( 1.5 * var( --wp--custom--spacing--baseline ) ) 0; }
-:root .alignright { margin: 3px 0 calc( 1.5 * var( --wp--custom--spacing--baseline ) ) calc( 1.5 * var( --wp--custom--spacing--baseline ) ); }
