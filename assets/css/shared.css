@@ -38,35 +38,12 @@ a:hover {
 /* ------------------------------------------- */
 
 
-/* Lists --------------------------- */
+/* Separator ----------------------- */
 
-ul,
-ol {
-	margin: calc( 1.5 * var( --wp--custom--spacing--baseline ) ) 0 calc( 1.5 * var( --wp--custom--spacing--baseline ) ) 0;
-	padding: 0;
+hr {
+	margin-top: 0;
+	margin-bottom: 0;
 }
-
-li {
-	margin: calc( .5 * var( --wp--custom--spacing--baseline ) ) 0 calc( .5 * var( --wp--custom--spacing--baseline ) ) 1.25em;
-}
-
-li > ul,
-li > ol {
-	margin-bottom: calc( .5 * var( --wp--custom--spacing--baseline ) );
-	margin-top: calc( .5 * var( --wp--custom--spacing--baseline ) );
-}
-
-dt,
-dd {
-	line-height: var( --wp--custom--typography--line-height--body );
-}
-
-dt {
-	font-weight: var( --wp--custom--typography--font-weight--bold );
-}
-
-dt + dd { margin-top: 5px; }
-dd + dt { margin-top: 15px; }
 
 /* Media --------------------------- */
 
@@ -231,22 +208,23 @@ caption {
 /*	Typography
 /* ------------------------------------------- */
 
-
-[class*="has-heading-"][class*="-font-size"] {
-	line-height: var( --wp--custom--typography--line-height--heading );
-}
-
 .has-heading-1-font-size,
 .has-heading-2-font-size,
-.has-heading-3-font-size { letter-spacing: var( --wp--custom--typography--letter-spacing--headings--large ); }
+.has-heading-3-font-size { 
+	letter-spacing: var( --wp--custom--typography--letter-spacing--headings--large ); 
+	line-height: var( --wp--custom--typography--line-height--headings--large ); 
+}
 
 .has-heading-4-font-size,
 .has-heading-5-font-size,
-.has-heading-6-font-size { letter-spacing: var( --wp--custom--typography--letter-spacing--headings--small ); }
+.has-heading-6-font-size { 
+	letter-spacing: var( --wp--custom--typography--letter-spacing--headings--small ); 
+	line-height: var( --wp--custom--typography--line-height--headings--small ); 
+}
 
 .has-gigantic-font-size {
 	letter-spacing: var( --wp--custom--typography--letter-spacing--headings--large );
-	line-height: var( --wp--custom--typography--line-height--gigantic );
+	line-height: var( --wp--custom--typography--line-height--headings--gigantic );
 }
 
 
