@@ -99,7 +99,7 @@
 							"fontWeight": "100 900",
 							"fontStyle": "oblique 0deg 10deg",
 							"fontStretch": "normal",
-							"src": [ "file:./assets/fonts/inter.ttf" ]
+							"src": [ "file:./assets/fonts/inter.var.woff2" ]
 						}
 					]
 				},
@@ -256,7 +256,7 @@
 			"core/quote": {
 				"border": {
 					"width": "1px",
-					"color": "var(--wp--preset--color--foreground)"
+					"color": "var(--wp--preset--color--tertiary)"
 				},
 				"spacing": {
 					"padding": {
@@ -331,8 +331,8 @@
 			"h1": {
 				"spacing": {
 					"margin": {
-						"bottom": "calc( 1.5 * var( --wp--custom--spacing--baseline ) )",
-						"top": "calc( 2 * var( --wp--custom--spacing--baseline ) )"
+						"bottom": "1em",
+						"top": ".75em"
 					}
 				},
 				"typography": {
@@ -345,8 +345,8 @@
 			"h2": {
 				"spacing": {
 					"margin": {
-						"bottom": "calc( 1.5 * var( --wp--custom--spacing--baseline ) )",
-						"top": "calc( 2 * var( --wp--custom--spacing--baseline ) )"
+						"bottom": "1em",
+						"top": ".75em"
 					}
 				},
 				"typography": {
@@ -359,8 +359,8 @@
 			"h3": {
 				"spacing": {
 					"margin": {
-						"bottom": "calc( 1.5 * var( --wp--custom--spacing--baseline ) )",
-						"top": "calc( 2 * var( --wp--custom--spacing--baseline ) )"
+						"bottom": "1em",
+						"top": ".75em"
 					}
 				},
 				"typography": {
@@ -373,8 +373,8 @@
 			"h4": {
 				"spacing": {
 					"margin": {
-						"bottom": "calc( 1.5 * var( --wp--custom--spacing--baseline ) )",
-						"top": "calc( 2 * var( --wp--custom--spacing--baseline ) )"
+						"bottom": "1em",
+						"top": ".75em"
 					}
 				},
 				"typography": {
@@ -387,8 +387,8 @@
 			"h5": {
 				"spacing": {
 					"margin": {
-						"bottom": "calc( 1.5 * var( --wp--custom--spacing--baseline ) )",
-						"top": "calc( 2 * var( --wp--custom--spacing--baseline ) )"
+						"bottom": "1em",
+						"top": ".75em"
 					}
 				},
 				"typography": {
@@ -401,8 +401,8 @@
 			"h6": {
 				"spacing": {
 					"margin": {
-						"bottom": "calc( 1.5 * var( --wp--custom--spacing--baseline ) )",
-						"top": "calc( 2 * var( --wp--custom--spacing--baseline ) )"
+						"bottom": "1em",
+						"top": ".75em"
 					}
 				},
 				"typography": {

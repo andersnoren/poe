@@ -314,7 +314,16 @@ h6.has-background,
 .wp-block-post-content h4:not([style*="margin-top"]):not(:first-child),
 .wp-block-post-content h5:not([style*="margin-top"]):not(:first-child),
 .wp-block-post-content h6:not([style*="margin-top"]):not(:first-child) {
-	margin-top: calc( 2 * var( --wp--custom--spacing--baseline ) ) !important;
+	margin-top: 1em !important;
+}
+
+.wp-block-post-content h1:not([style*="margin-bottom"]):not(:last-child),
+.wp-block-post-content h2:not([style*="margin-bottom"]):not(:last-child),
+.wp-block-post-content h3:not([style*="margin-bottom"]):not(:last-child),
+.wp-block-post-content h4:not([style*="margin-bottom"]):not(:last-child),
+.wp-block-post-content h5:not([style*="margin-bottom"]):not(:last-child),
+.wp-block-post-content h6:not([style*="margin-bottom"]):not(:last-child) {
+	margin-bottom: .75em !important;
 }
 
 /* Block: Navigation ------------------------- */
