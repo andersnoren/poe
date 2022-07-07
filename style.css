@@ -112,14 +112,6 @@ body>.is-root-container>.wp-block-template-part>.wp-block-cover,
 	width: inherit;
 }
 
-:root .alignwide,
-:root .alignfull,
-.wp-block[data-align="wide"],
-.wp-block[data-align="full"] {
-	margin-bottom: clamp( calc( 3 * var( --wp--custom--spacing--baseline ) ), 6.666vw, calc( 6 * var( --wp--custom--spacing--baseline ) ) );
-	margin-top: clamp( calc( 3 * var( --wp--custom--spacing--baseline ) ), 6.666vw, calc( 6 * var( --wp--custom--spacing--baseline ) ) );
-}
-
 /*
  * Search and File Block button styles.
  * Necessary until the following issues are resolved in Gutenberg:
@@ -168,21 +160,35 @@ h6.has-background,
 
 .has-heading-1-font-size,
 .has-heading-2-font-size,
-.has-heading-3-font-size { 
-	letter-spacing: var( --wp--custom--typography--letter-spacing--headings--large ); 
-	line-height: var( --wp--custom--typography--line-height--headings--large ); 
-}
-
+.has-heading-3-font-size,
 .has-heading-4-font-size,
 .has-heading-5-font-size,
 .has-heading-6-font-size { 
-	letter-spacing: var( --wp--custom--typography--letter-spacing--headings--small ); 
-	line-height: var( --wp--custom--typography--line-height--headings--small ); 
+	line-height: var( --wp--custom--typography--line-height--headings--large ); 
 }
 
 .has-gigantic-font-size {
-	letter-spacing: var( --wp--custom--typography--letter-spacing--headings--large );
 	line-height: var( --wp--custom--typography--line-height--headings--gigantic );
+}
+
+.has-medium-font-size {
+	line-height: var( --wp--custom--typography--line-height--body );
+}
+
+/* Text Decoration --------------------------- */
+
+.wp-block-post-date a,
+.wp-block-site-title a,
+.wp-block-query-pagination a,
+.wp-block-post-title a {
+	text-decoration: none;
+}
+
+.wp-block-post-date a:hover, .wp-block-post-date a:focus,
+.wp-block-site-title a:hover, .wp-block-site-title a:focus,
+.wp-block-query-pagination a:hover, .wp-block-query-pagination a:focus,
+.wp-block-post-title a:hover, .wp-block-post-title a:focus {
+	text-decoration: underline;
 }
 
 
@@ -210,6 +216,11 @@ h6.has-background,
 	font-weight: 300;
 	margin-left: 0.5em;
 	text-decoration: none;
+}
+
+.is-style-poe-arrow > .wp-block-button__link:hover, .wp-block-button__link.is-style-poe-arrow:hover,
+.is-style-poe-arrow > .wp-block-button__link:focus, .wp-block-button__link.is-style-poe-arrow:focus {
+	text-decoration: underline;
 }
 
 /* STYLE: UPPERCASE */
@@ -264,6 +275,34 @@ h6.has-background,
 
 .wp-block-navigation__responsive-container.is-menu-open { 
 	padding: var(--wp--custom--spacing--outer); 
+}
+
+.wp-block-navigation__responsive-container:not(.is-menu-open) .wp-block-navigation__submenu-container {
+	font-size: var( --wp--preset--font-size--small );
+}
+
+/* Block: Pull Quote ------------------------- */
+
+:root .wp-block-pullquote blockquote,
+:root .wp-block-pullquote blockquote p {
+	line-height: inherit;
+}
+
+:root .wp-block-pullquote blockquote p {
+	hanging-punctuation: first;
+	font-size: inherit;
+}
+
+:root .wp-block-pullquote.has-text-align-left, 
+:root .wp-block-pullquote.has-text-align-right {
+	max-width: 100%;
+}
+
+/* Block: Quote ------------------------------ */
+
+blockquote,
+blockquote p {
+	margin: 0;
 }
 
 /* Block: Search Form ------------------------ */
