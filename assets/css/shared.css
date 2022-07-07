@@ -102,7 +102,7 @@ blockquote p:first-child {
 
 cite {
 	display: block;
-	font-size: var( --wp--preset--font-size--normal );
+	font-size: var( --wp--preset--font-size--medium );
 	font-style: normal;
 	line-height: var( --wp--custom--typography--line-height--body );
 	margin-top: 1em;

@@ -22,7 +22,7 @@
 		<div class="wp-block-group no-margin has-senary-background-color has-background">
 			<!-- wp:list -->
 			<ul>
-				<li><span style="color: var(--wp--preset--color--foreground); font-size: var(--wp--preset--font-size--normal);">5 percent discount on everything</span></li>
+				<li><span style="color: var(--wp--preset--color--foreground); font-size: var(--wp--preset--font-size--medium);">5 percent discount on everything</span></li>
 				<li>Free shipping in the online store</li>
 				<li>Invitations to special events</li>
 			</ul>

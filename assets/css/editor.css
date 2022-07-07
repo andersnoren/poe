@@ -21,8 +21,7 @@ body {
 
 .edit-post-visual-editor__post-title-wrapper .editor-post-title {
 	margin-bottom: calc( 2 * var( --wp--custom--spacing--baseline ) );
-	max-width: calc( 100% - ( 2 * var( --wp--custom--spacing--gutter ) ) );
-	text-align: center;
+	text-align: inherit;
 }
 
 .editor-post-title .editor-post-title__input {

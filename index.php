@@ -1,9 +1,3 @@
 <?php
-/**
- * Without this file, WordPress will consider the theme broken :(
- */
 
-if ( current_user_can( 'activate_plugins' ) ) {
-	esc_html_e( 'This theme was built for the WordPress experimental full-site-editing feature. You need to install and activate the Gutenberg plugin to make it work.', 'poe' );
-}
-
+// This file intentionally left empty due to the theme directory automated checks.

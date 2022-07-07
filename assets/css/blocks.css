@@ -528,14 +528,21 @@ h6.has-background.has-text-align-right {
 }
 
 .wp-block-navigation__responsive-container-close.wp-block-navigation__responsive-container-close {
+	display: flex;
 	right: var( --wp--custom--spacing--gutter );
-	top: calc( 2 * var( --wp--custom--spacing--baseline ) );
+	top: clamp( calc( 3 * var( --wp--custom--spacing--baseline ) ), 6.666vw, calc( 6 * var( --wp--custom--spacing--baseline ) ) );
+}
+
+.wp-block-navigation__responsive-container-close svg, 
+.wp-block-navigation__responsive-container-open svg {
+	height: 28px;
+	width: 28px;
 }
 
 /* Responsive Container ------------ */
 
 .wp-block-navigation__responsive-container.is-menu-open {
-	padding: calc( 4 * var( --wp--custom--spacing--baseline ) ) var( --wp--custom--spacing--gutter ) calc( 4 * var( --wp--custom--spacing--baseline ) );
+	padding: clamp( calc( 3 * var( --wp--custom--spacing--baseline ) ), 6.666vw, calc( 6 * var( --wp--custom--spacing--baseline ) ) ) var( --wp--custom--spacing--gutter ) clamp( calc( 3 * var( --wp--custom--spacing--baseline ) ), 6.666vw, calc( 6 * var( --wp--custom--spacing--baseline ) ) ) var( --wp--custom--spacing--gutter );
 }
 
 .wp-block-navigation .wp-block-navigation__responsive-container.is-menu-open .has-child :where(.wp-block-navigation__submenu-container):before {
