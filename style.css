@@ -19,6 +19,17 @@
 /* --------------------------------------------------------------------------------------------- */
 
 /*
+ * Font smoothing.
+ * This is a niche setting that will not be available via Global Styles.
+ * https://github.com/WordPress/gutenberg/issues/35934
+ */
+
+body {
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+}
+
+/*
  * Link styles. Necessary until the following issue is resolved in Gutenberg:
  * https://github.com/WordPress/gutenberg/issues/27075
  */
@@ -177,6 +188,13 @@ h6.has-background,
 
 /* Text Decoration --------------------------- */
 
+#cancel-comment-reply-link,
+.wp-block-post-terms a,
+.wp-block-comment-edit-link a,
+.comment-reply-link,
+.wp-block-comment-date a,
+.wp-block-comment-author-name a,
+.wp-block-comments-pagination a,
 .wp-block-post-date a,
 .wp-block-site-title a,
 .wp-block-query-pagination a,
@@ -184,6 +202,13 @@ h6.has-background,
 	text-decoration: none;
 }
 
+#cancel-comment-reply-link:hover, #cancel-comment-reply-link:focus,
+.wp-block-post-terms a:hover, .wp-block-post-terms a:focus,
+.wp-block-comment-edit-link a:hover, .wp-block-comment-edit-link a:focus,
+.comment-reply-link:hover, .comment-reply-link:focus,
+.wp-block-comment-date a:hover, .wp-block-comment-date a:focus,
+.wp-block-comment-author-name a:hover, .wp-block-comment-author-name a:focus,
+.wp-block-comments-pagination a:hover, .wp-block-comments-pagination a:focus,
 .wp-block-post-date a:hover, .wp-block-post-date a:focus,
 .wp-block-site-title a:hover, .wp-block-site-title a:focus,
 .wp-block-query-pagination a:hover, .wp-block-query-pagination a:focus,
@@ -196,6 +221,12 @@ h6.has-background,
 /* Blocks
 /* ------------------------------------------- */
 
+
+/* Block: Avatar ----------------------------- */
+
+.wp-block-avatar img {
+	display: block;
+}
 
 /* Block: Buttons ---------------------------- */
 
@@ -246,6 +277,21 @@ h6.has-background,
 
 .wp-block-calendar table th { 
 	background-color: var( --wp--preset--color--secondary ); 
+}
+
+/* Block: Post Comments Form ----------------- */
+
+.required-field-message,
+.comment-notes {
+	display: none;
+}
+
+.logged-in-as {
+	color: var( --wp--preset--color--secondary );
+}
+
+.comment-reply-title {
+	margin: 0;
 }
 
 /* Block: File ------------------------------- */

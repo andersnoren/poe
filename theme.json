@@ -67,11 +67,11 @@
 					"bold": 700
 				},
 				"letter-spacing": {
-					"body": "-0.022em",
+					"body": "-0.01em",
 					"uppercase": "0"
 				},
 				"line-height": {
-					"body": "calc( 1em + 10px )",
+					"body": "calc( 1.5em )",
 					"headings": {
 						"gigantic": 1.05,
 						"large": 1.3
@@ -96,10 +96,10 @@
 					"fontFace": [
 						{
 							"fontFamily": "Inter",
-							"fontWeight": "400",
-							"fontStyle": "normal",
+							"fontWeight": "100 900",
+							"fontStyle": "oblique 0deg 10deg",
 							"fontStretch": "normal",
-							"src": [ "file:./assets/fonts/inter.var.woff2" ]
+							"src": [ "file:./assets/fonts/inter.ttf" ]
 						}
 					]
 				},
