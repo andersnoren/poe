@@ -45,11 +45,12 @@ input, textarea, select, button {
 	border-radius: 0;
 	font-family: inherit;
 	font-size: inherit;
+	letter-spacing: inherit;
 }
 
 input, textarea, select {
 	background-color: var( --wp--preset--color--background );
-	border: .1rem solid var( --wp--preset--color--secondary );
+	border: .1rem solid var( --wp--preset--color--tertiary );
 	color: var( --wp--preset--color--foreground );
 	padding: .5em;
 }
@@ -119,7 +120,6 @@ body>.is-root-container>.wp-block-template-part>.wp-block-cover,
  * https://github.com/WordPress/gutenberg/issues/27760
  */
 
-button,
 input[type="button"],
 input[type="submit"],
 input[type="reset"],
@@ -268,7 +268,7 @@ h6.has-background,
 .wp-block-post-content h4:not([style*="margin-top"]):not(:first-child),
 .wp-block-post-content h5:not([style*="margin-top"]):not(:first-child),
 .wp-block-post-content h6:not([style*="margin-top"]):not(:first-child) {
-	margin-top: var( --wp--custom--spacing--small ) !important;
+	margin-top: calc( 2 * var( --wp--custom--spacing--baseline ) ) !important;
 }
 
 /* Block: Navigation ------------------------- */
@@ -280,6 +280,29 @@ h6.has-background,
 .wp-block-navigation__responsive-container:not(.is-menu-open) .wp-block-navigation__submenu-container {
 	font-size: var( --wp--preset--font-size--small );
 }
+
+/* Block: Paragraph -------------------------- */
+
+.has-drop-cap:not(:focus):first-letter {
+	border: .2rem solid currentColor;
+    font-size: 2.75em;
+    font-weight: var( --wp--custom--typography--font-weight--bold );
+	margin: .09em 1rem .5rem 0;
+	min-width: .6875em;
+	padding: 0.3em;
+	text-align: center;
+}
+
+/* Block: Post Comments Form ----------------- */
+
+.wp-block-post-comments-form input:not([type=submit]), .wp-block-post-comments-form textarea {
+	border-color: var( --wp--preset--color--tertiary );
+}
+
+/* Block: Post Navigation -------------------- */
+
+.post-navigation-link-previous a:before { content: "← "; }
+.post-navigation-link-next a:after { content: " →"; }
 
 /* Block: Pull Quote ------------------------- */
 
@@ -300,10 +323,12 @@ h6.has-background,
 
 /* Block: Quote ------------------------------ */
 
-blockquote,
-blockquote p {
+blockquote {
 	margin: 0;
 }
+
+blockquote p:first-child { margin-top: 0; }
+blockquote p:last-child { margin-bottom: 0; }
 
 /* Block: Search Form ------------------------ */
 
