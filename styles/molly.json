@@ -1,5 +1,5 @@
 {
-    "title": "Eksell",
+    "title": "Greta",
 	"$schema": "https://schemas.wp.org/trunk/theme.json",
     "version": 2,
     "settings": {
@@ -7,38 +7,48 @@
 			"palette": [
 				{
 					"slug": "foreground",
-					"color": "#1e2d32",
+					"color": "#168446",
 					"name": "Foreground"
 				},
 				{
 					"slug": "background",
-					"color": "#f3efe9",
+					"color": "#EBA1C7",
 					"name": "Background"
 				},
 				{
 					"slug": "primary",
-					"color": "#d23c50",
+					"color": "#168446",
 					"name": "Primary"
 				},
 				{
 					"slug": "secondary",
-					"color": "#707376",
+					"color": "#168446",
 					"name": "Secondary"
 				},
 				{
 					"slug": "tertiary",
-					"color": "#d6d5d4",
+					"color": "#168446",
 					"name": "Tertiary"
 				},
 				{
 					"slug": "quaternary",
-					"color": "#ffffff",
+					"color": "#fff",
 					"name": "Quaternary"
 				}
 			]
 		}
     },
 	"styles": {
+		"blocks": {
+			"core/button": {
+				"border": {
+					"radius": "999px"
+				},
+				"typography": {
+					"fontWeight": "500"
+				}
+			}
+		},
 		"elements": {
 			"h1": {
 				"typography": {
@@ -70,6 +80,9 @@
 					"fontWeight": "700"
 				}
 			}
+		},
+		"typography": {
+			"fontWeight": "500"
 		}
 	}
 }

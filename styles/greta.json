@@ -1,5 +1,5 @@
 {
-    "title": "Thurman",
+    "title": "Greta",
 	"$schema": "https://schemas.wp.org/trunk/theme.json",
     "version": 2,
     "settings": {
@@ -7,32 +7,32 @@
 			"palette": [
 				{
 					"slug": "foreground",
-					"color": "#f00",
+					"color": "#E9EACE",
 					"name": "Foreground"
 				},
 				{
 					"slug": "background",
-					"color": "#ffd401",
+					"color": "#1D3916",
 					"name": "Background"
 				},
 				{
 					"slug": "primary",
-					"color": "#f00",
+					"color": "#F2994A",
 					"name": "Primary"
 				},
 				{
 					"slug": "secondary",
-					"color": "#f00",
+					"color": "#B0BA8E",
 					"name": "Secondary"
 				},
 				{
 					"slug": "tertiary",
-					"color": "#f00",
+					"color": "#4A6145",
 					"name": "Tertiary"
 				},
 				{
 					"slug": "quaternary",
-					"color": "#ffffff",
+					"color": "#344D2D",
 					"name": "Quaternary"
 				}
 			]
@@ -45,45 +45,39 @@
 					"radius": "999px"
 				},
 				"typography": {
-					"fontWeight": "800"
+					"fontWeight": "500"
 				}
 			}
 		},
 		"elements": {
 			"h1": {
 				"typography": {
-					"fontWeight": "500",
-					"textTransform": "uppercase"
+					"fontWeight": "500"
 				}
 			},
 			"h2": {
 				"typography": {
-					"fontWeight": "500",
-					"textTransform": "uppercase"
+					"fontWeight": "500"
 				}
 			},
 			"h3": {
 				"typography": {
-					"fontWeight": "500",
-					"textTransform": "uppercase"
+					"fontWeight": "500"
 				}
 			},
 			"h4": {
 				"typography": {
-					"fontWeight": "500",
-					"textTransform": "uppercase"
+					"fontWeight": "500"
 				}
 			},
 			"h5": {
 				"typography": {
-					"fontWeight": "500",
-					"textTransform": "uppercase"
+					"fontWeight": "500"
 				}
 			},
 			"h6": {
 				"typography": {
-					"fontWeight": "500",
-					"textTransform": "uppercase"
+					"fontWeight": "500"
 				}
 			}
 		},
