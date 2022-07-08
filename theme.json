@@ -460,6 +460,7 @@
 					}
 				},
 				"typography": {
+					"fontFamily": "inherit",
 					"fontStyle": "inherit",
 					"fontWeight": "inherit",
 					"textTransform": "inherit"
