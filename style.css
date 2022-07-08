@@ -180,8 +180,7 @@ h6.has-background,
 .has-heading-2-font-size,
 .has-heading-3-font-size,
 .has-heading-4-font-size,
-.has-heading-5-font-size,
-.has-heading-6-font-size { 
+.has-heading-5-font-size { 
 	letter-spacing: var( --wp--custom--typography--letter-spacing--heading );
 	line-height: var( --wp--custom--typography--line-height--headings--large ); 
 }
@@ -238,6 +237,11 @@ h6.has-background,
 
 /* Block: Buttons ---------------------------- */
 
+.is-style-outline>.wp-block-button__link:not(.has-text-color), 
+.wp-block-button__link.is-style-outline:not(.has-text-color) {
+	color: var( --wp--preset--color--primary );
+}
+
 /* STYLE: ARROW */
 
 .is-style-poe-arrow > .wp-block-button__link,
@@ -260,15 +264,6 @@ h6.has-background,
 .is-style-poe-arrow > .wp-block-button__link:hover, .wp-block-button__link.is-style-poe-arrow:hover,
 .is-style-poe-arrow > .wp-block-button__link:focus, .wp-block-button__link.is-style-poe-arrow:focus {
 	text-decoration: underline;
-}
-
-/* STYLE: UPPERCASE */
-
-.is-style-poe-uppercase > .wp-block-button__link,
-.wp-block-button__link.is-style-poe-uppercase {
-	font-weight: var( --wp--custom--typography--font-weight--semibold );
-	letter-spacing: var( --wp--custom--typography--letter-spacing--uppercase );
-	text-transform: uppercase;
 }
 
 /* Block: Calendar --------------------------- */

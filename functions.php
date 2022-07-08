@@ -291,12 +291,6 @@ if ( ! function_exists( 'poe_register_block_styles' ) ) :
 			'name'  	=> 'poe-arrow',
 			'label' 	=> esc_html__( 'Arrow', 'poe' ),
 		) );
-
-		// Button: Uppercase
-		register_block_style( 'core/button', array(
-			'name'  	=> 'poe-uppercase',
-			'label' 	=> esc_html__( 'Uppercase', 'poe' ),
-		) );
 		
 	}
 	add_action( 'init', 'poe_register_block_styles' );
