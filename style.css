@@ -66,6 +66,11 @@ input, textarea, select {
 	padding: .5em;
 }
 
+label {
+	font-size: var( --wp--preset--font-size--small );
+	font-weight: 500;
+}
+
 /* Caption styles */
 
 :root figcaption {
@@ -136,11 +141,12 @@ input[type="submit"],
 input[type="reset"],
 .wp-block-search__button,
 .wp-block-file .wp-block-file__button {
-	background-color: var( --wp--preset--color--foreground );
+	background-color: var( --wp--preset--color--primary );
 	border: none;
 	border-radius: 0;
 	color: var(--wp--preset--color--background);
 	font-size: var(--wp--preset--font-size--medium);
+	letter-spacing: inherit;
 	padding: calc(.667em + 2px) calc(1.333em + 2px);
 }
 
@@ -169,12 +175,14 @@ h6.has-background,
 /* ------------------------------------------- */
 
 
+.has-huge-font-size,
 .has-heading-1-font-size,
 .has-heading-2-font-size,
 .has-heading-3-font-size,
 .has-heading-4-font-size,
 .has-heading-5-font-size,
 .has-heading-6-font-size { 
+	letter-spacing: var( --wp--custom--typography--letter-spacing--heading );
 	line-height: var( --wp--custom--typography--line-height--headings--large ); 
 }
 
@@ -279,21 +287,6 @@ h6.has-background,
 	background-color: var( --wp--preset--color--secondary ); 
 }
 
-/* Block: Post Comments Form ----------------- */
-
-.required-field-message,
-.comment-notes {
-	display: none;
-}
-
-.logged-in-as {
-	color: var( --wp--preset--color--secondary );
-}
-
-.comment-reply-title {
-	margin: 0;
-}
-
 /* Block: File ------------------------------- */
 
 .wp-block-file {
@@ -350,8 +343,26 @@ h6.has-background,
 
 /* Block: Post Comments Form ----------------- */
 
-.wp-block-post-comments-form input:not([type=submit]), .wp-block-post-comments-form textarea {
+ol.wp-block-comment-template {
+	margin: 0;
+}
+
+.wp-block-post-comments-form input:not([type=submit]), 
+.wp-block-post-comments-form textarea {
 	border-color: var( --wp--preset--color--tertiary );
+}
+
+.required-field-message,
+.comment-notes {
+	display: none;
+}
+
+.logged-in-as {
+	color: var( --wp--preset--color--secondary );
+}
+
+.comment-reply-title {
+	margin: 0;
 }
 
 /* Block: Post Navigation -------------------- */

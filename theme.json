@@ -68,6 +68,7 @@
 				},
 				"letter-spacing": {
 					"body": "-0.01em",
+					"heading": "-0.02em",
 					"uppercase": "0"
 				},
 				"line-height": {
@@ -338,7 +339,7 @@
 				"typography": {
 					"fontSize": "var(--wp--preset--font-size--heading-1)",
 					"fontWeight": "var(--wp--custom--typography--font-weight--regular)",
-					"letterSpacing": "var(--wp--custom--typography--letter-spacing--headings--body)",
+					"letterSpacing": "var(--wp--custom--typography--letter-spacing--heading)",
 					"lineHeight": "var(--wp--custom--typography--line-height--headings--large)"
 				}
 			},
@@ -352,7 +353,7 @@
 				"typography": {
 					"fontSize": "var(--wp--preset--font-size--heading-2)",
 					"fontWeight": "var(--wp--custom--typography--font-weight--regular)",
-					"letterSpacing": "var(--wp--custom--typography--letter-spacing--headings--body)",
+					"letterSpacing": "var(--wp--custom--typography--letter-spacing--heading)",
 					"lineHeight": "var(--wp--custom--typography--line-height--headings--large)"
 				}
 			},
@@ -366,7 +367,7 @@
 				"typography": {
 					"fontSize": "var(--wp--preset--font-size--heading-3)",
 					"fontWeight": "var(--wp--custom--typography--font-weight--regular)",
-					"letterSpacing": "var(--wp--custom--typography--letter-spacing--headings--body)",
+					"letterSpacing": "var(--wp--custom--typography--letter-spacing--heading)",
 					"lineHeight": "var(--wp--custom--typography--line-height--headings--large)"
 				}
 			},
@@ -380,7 +381,7 @@
 				"typography": {
 					"fontSize": "var(--wp--preset--font-size--heading-4)",
 					"fontWeight": "var(--wp--custom--typography--font-weight--regular)",
-					"letterSpacing": "var(--wp--custom--typography--letter-spacing--headings--body)",
+					"letterSpacing": "var(--wp--custom--typography--letter-spacing--heading)",
 					"lineHeight": "var(--wp--custom--typography--line-height--headings--large)"
 				}
 			},
@@ -394,7 +395,7 @@
 				"typography": {
 					"fontSize": "var(--wp--preset--font-size--heading-5)",
 					"fontWeight": "var(--wp--custom--typography--font-weight--regular)",
-					"letterSpacing": "var(--wp--custom--typography--letter-spacing--headings--body)",
+					"letterSpacing": "var(--wp--custom--typography--letter-spacing--heading)",
 					"lineHeight": "var(--wp--custom--typography--line-height--headings--large)"
 				}
 			},
@@ -408,7 +409,7 @@
 				"typography": {
 					"fontSize": "var(--wp--preset--font-size--heading-6)",
 					"fontWeight": "var(--wp--custom--typography--font-weight--regular)",
-					"letterSpacing": "var(--wp--custom--typography--letter-spacing--headings--body)",
+					"letterSpacing": "var(--wp--custom--typography--letter-spacing--heading)",
 					"lineHeight": "var(--wp--custom--typography--line-height--headings--small)"
 				}
 			},
