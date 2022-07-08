@@ -266,7 +266,7 @@ h6.has-background,
 
 .is-style-poe-uppercase > .wp-block-button__link,
 .wp-block-button__link.is-style-poe-uppercase {
-	font-weight: 600;
+	font-weight: var( --wp--custom--typography--font-weight--semibold );
 	letter-spacing: var( --wp--custom--typography--letter-spacing--uppercase );
 	text-transform: uppercase;
 }
@@ -387,6 +387,19 @@ ol.wp-block-comment-template {
 	max-width: 100%;
 }
 
+/* Block: Query Loop ------------------------- */
+/* Block: Query Pagination ------------------- */
+
+.wp-block-query-pagination > .wp-block-query-pagination-next, 
+.wp-block-query-pagination > .wp-block-query-pagination-numbers, 
+.wp-block-query-pagination > .wp-block-query-pagination-previous {
+	margin-bottom: 0;
+}
+
+.wp-block-query-pagination-next:only-child {
+	margin-left: auto;
+}
+
 /* Block: Quote ------------------------------ */
 
 blockquote {
@@ -397,6 +410,10 @@ blockquote p:first-child { margin-top: 0; }
 blockquote p:last-child { margin-bottom: 0; }
 
 /* Block: Search Form ------------------------ */
+
+.wp-block-search .wp-block-search__label {
+	font-weight: inherit;
+}
 
 .wp-block-search__input,
 .wp-block-search.wp-block-search__button-inside .wp-block-search__inside-wrapper {

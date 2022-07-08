@@ -1,0 +1,75 @@
+{
+    "title": "Eksell",
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+    "version": 2,
+    "settings": {
+        "color": {
+			"palette": [
+				{
+					"slug": "foreground",
+					"color": "#1e2d32",
+					"name": "Foreground"
+				},
+				{
+					"slug": "background",
+					"color": "#f3efe9",
+					"name": "Background"
+				},
+				{
+					"slug": "primary",
+					"color": "#d23c50",
+					"name": "Primary"
+				},
+				{
+					"slug": "secondary",
+					"color": "#707376",
+					"name": "Secondary"
+				},
+				{
+					"slug": "tertiary",
+					"color": "#d6d5d4",
+					"name": "Tertiary"
+				},
+				{
+					"slug": "quaternary",
+					"color": "#ffffff",
+					"name": "Quaternary"
+				}
+			]
+		}
+    },
+	"styles": {
+		"elements": {
+			"h1": {
+				"typography": {
+					"fontWeight": "700"
+				}
+			},
+			"h2": {
+				"typography": {
+					"fontWeight": "700"
+				}
+			},
+			"h3": {
+				"typography": {
+					"fontWeight": "700"
+				}
+			},
+			"h4": {
+				"typography": {
+					"fontWeight": "700"
+				}
+			},
+			"h5": {
+				"typography": {
+					"fontWeight": "700"
+				}
+			},
+			"h6": {
+				"typography": {
+					"fontWeight": "700"
+				}
+			}
+		}
+	}
+}
