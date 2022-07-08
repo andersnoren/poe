@@ -17,6 +17,163 @@
 	"settings": {
 		"appearanceTools": true,
 		"color": {
+			"gradients": [
+				{
+					"slug": "foreground-to-background",
+					"gradient": "linear-gradient(160deg, var(--wp--preset--color--foreground), var(--wp--preset--color--background))",
+					"name": "Foreground to Background"
+				},
+				{
+					"slug": "foreground-to-primary",
+					"gradient": "linear-gradient(160deg, var(--wp--preset--color--foreground), var(--wp--preset--color--primary))",
+					"name": "Foreground to Primary"
+				},
+				{
+					"slug": "foreground-to-secondary",
+					"gradient": "linear-gradient(160deg, var(--wp--preset--color--foreground), var(--wp--preset--color--secondary))",
+					"name": "Foreground to Secondary"
+				},
+				{
+					"slug": "foreground-to-quaternary",
+					"gradient": "linear-gradient(160deg, var(--wp--preset--color--foreground), var(--wp--preset--color--quaternary))",
+					"name": "Foreground to Quaternary"
+				},
+				{
+					"slug": "foreground-to-tertiary",
+					"gradient": "linear-gradient(160deg, var(--wp--preset--color--foreground), var(--wp--preset--color--tertiary))",
+					"name": "Foreground to Tertiary"
+				},
+
+				{
+					"slug": "background-to-foreground",
+					"gradient": "linear-gradient(160deg, var(--wp--preset--color--background), var(--wp--preset--color--foreground))",
+					"name": "Background to Foreground"
+				},
+				{
+					"slug": "background-to-primary",
+					"gradient": "linear-gradient(160deg, var(--wp--preset--color--background), var(--wp--preset--color--primary))",
+					"name": "Background to Primary"
+				},
+				{
+					"slug": "background-to-secondary",
+					"gradient": "linear-gradient(160deg, var(--wp--preset--color--background), var(--wp--preset--color--secondary))",
+					"name": "Background to Secondary"
+				},
+				{
+					"slug": "background-to-quaternary",
+					"gradient": "linear-gradient(160deg, var(--wp--preset--color--background), var(--wp--preset--color--quaternary))",
+					"name": "Background to Quaternary"
+				},
+				{
+					"slug": "background-to-tertiary",
+					"gradient": "linear-gradient(160deg, var(--wp--preset--color--background), var(--wp--preset--color--tertiary))",
+					"name": "Background to Tertiary"
+				},
+
+				{
+					"slug": "primary-to-background",
+					"gradient": "linear-gradient(160deg, var(--wp--preset--color--primary), var(--wp--preset--color--background))",
+					"name": "Primary to Background"
+				},
+				{
+					"slug": "primary-to-foreground",
+					"gradient": "linear-gradient(160deg, var(--wp--preset--color--primary), var(--wp--preset--color--foreground))",
+					"name": "Primary to Foreground"
+				},
+				{
+					"slug": "primary-to-secondary",
+					"gradient": "linear-gradient(160deg, var(--wp--preset--color--primary), var(--wp--preset--color--secondary))",
+					"name": "Primary to Secondary"
+				},
+				{
+					"slug": "primary-to-quaternary",
+					"gradient": "linear-gradient(160deg, var(--wp--preset--color--primary), var(--wp--preset--color--quaternary))",
+					"name": "Primary to Quaternary"
+				},
+				{
+					"slug": "primary-to-tertiary",
+					"gradient": "linear-gradient(160deg, var(--wp--preset--color--primary), var(--wp--preset--color--tertiary))",
+					"name": "Primary to Tertiary"
+				},
+
+				{
+					"slug": "secondary-to-background",
+					"gradient": "linear-gradient(160deg, var(--wp--preset--color--secondary), var(--wp--preset--color--background))",
+					"name": "Secondary to Background"
+				},
+				{
+					"slug": "secondary-to-foreground",
+					"gradient": "linear-gradient(160deg, var(--wp--preset--color--secondary), var(--wp--preset--color--foreground))",
+					"name": "Secondary to Foreground"
+				},
+				{
+					"slug": "secondary-to-primary",
+					"gradient": "linear-gradient(160deg, var(--wp--preset--color--secondary), var(--wp--preset--color--primary))",
+					"name": "Secondary to Primary"
+				},
+				{
+					"slug": "secondary-to-quaternary",
+					"gradient": "linear-gradient(160deg, var(--wp--preset--color--secondary), var(--wp--preset--color--quaternary))",
+					"name": "Secondary to Quaternary"
+				},
+				{
+					"slug": "secondary-to-tertiary",
+					"gradient": "linear-gradient(160deg, var(--wp--preset--color--secondary), var(--wp--preset--color--tertiary))",
+					"name": "Secondary to Tertiary"
+				},
+
+				{
+					"slug": "tertiary-to-background",
+					"gradient": "linear-gradient(160deg, var(--wp--preset--color--tertiary), var(--wp--preset--color--background))",
+					"name": "Tertiary to Background"
+				},
+				{
+					"slug": "tertiary-to-foreground",
+					"gradient": "linear-gradient(160deg, var(--wp--preset--color--tertiary), var(--wp--preset--color--foreground))",
+					"name": "Tertiary to Foreground"
+				},
+				{
+					"slug": "tertiary-to-primary",
+					"gradient": "linear-gradient(160deg, var(--wp--preset--color--tertiary), var(--wp--preset--color--primary))",
+					"name": "Tertiary to Primary"
+				},
+				{
+					"slug": "tertiary-to-secondary",
+					"gradient": "linear-gradient(160deg, var(--wp--preset--color--tertiary), var(--wp--preset--color--secondary))",
+					"name": "Tertiary to Secondary"
+				},
+				{
+					"slug": "tertiary-to-quaternary",
+					"gradient": "linear-gradient(160deg, var(--wp--preset--color--tertiary), var(--wp--preset--color--quaternary))",
+					"name": "Tertiary to Quaternary"
+				},
+
+				{
+					"slug": "quaternary-to-background",
+					"gradient": "linear-gradient(160deg, var(--wp--preset--color--quaternary), var(--wp--preset--color--background))",
+					"name": "Quaternary to Background"
+				},
+				{
+					"slug": "quaternary-to-foreground",
+					"gradient": "linear-gradient(160deg, var(--wp--preset--color--quaternary), var(--wp--preset--color--foreground))",
+					"name": "Quaternary to Foreground"
+				},
+				{
+					"slug": "quaternary-to-primary",
+					"gradient": "linear-gradient(160deg, var(--wp--preset--color--quaternary), var(--wp--preset--color--primary))",
+					"name": "Quaternary to Primary"
+				},
+				{
+					"slug": "quaternary-to-secondary",
+					"gradient": "linear-gradient(160deg, var(--wp--preset--color--quaternary), var(--wp--preset--color--secondary))",
+					"name": "Quaternary to Secondary"
+				},
+				{
+					"slug": "quaternary-to-tertiary",
+					"gradient": "linear-gradient(160deg, var(--wp--preset--color--quaternary), var(--wp--preset--color--tertiary))",
+					"name": "Quaternary to Tertiary"
+				}
+			],
 			"link": true,
 			"palette": [
 				{
@@ -198,10 +355,10 @@
 				},
 				"spacing": {
 					"padding": {
-						"bottom": "1.33em",
+						"bottom": "1em",
 						"left": "1.33em",
 						"right": "1.33em",
-						"top": "1.33em"
+						"top": "1em"
 					}
 				},
 				"typography": {

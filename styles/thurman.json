@@ -39,6 +39,16 @@
 		}
     },
 	"styles": {
+		"blocks": {
+			"core/button": {
+				"border": {
+					"radius": "999px"
+				},
+				"typography": {
+					"fontWeight": "800"
+				}
+			}
+		},
 		"elements": {
 			"h1": {
 				"typography": {
