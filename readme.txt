@@ -31,8 +31,7 @@ All illustrations and icons in the theme files and screenshot.png by Anders Nor√
 License: Creative Commons Zero, https://creativecommons.org/publicdomain/zero/1.0/
 
 
-
 == Changelog ==
 
-Version 0.1 (2022-XX-XX)
+Version 0.1 (2022-07-11)
 -------------------------
