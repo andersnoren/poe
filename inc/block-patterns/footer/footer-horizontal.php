@@ -5,4 +5,4 @@
  * we include the HTML in the footer.html block template part file.
  */
 
-include( locate_template( 'block-template-parts/footer.html' ) );
+include( locate_template( 'parts/footer.html' ) );

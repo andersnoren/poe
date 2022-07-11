@@ -5,17 +5,19 @@
 	<!-- /wp:heading -->
 
 	<!-- wp:paragraph {"align":"center"} -->
-	<p class="has-text-align-center">Stay up to date with the latest from Niofika Café.</p>
+	<p class="has-text-align-center">Stay up to date with the latest at the agency.</p>
 	<!-- /wp:paragraph -->
 
-	<!-- wp:separator -->
-	<hr class="wp-block-separator" />
+	<!-- wp:separator {"opacity":"css"} -->
+	<hr class="wp-block-separator has-css-opacity" />
 	<!-- /wp:separator -->
 
-	<!-- wp:social-links {"iconColor":"foreground","iconColorValue":"#374AC8","iconBackgroundColor":"primary","iconBackgroundColorValue":"#FFC3CF","size":"has-normal-icon-size","className":"is-style-pill-shape"} -->
-	<ul class="wp-block-social-links has-normal-icon-size has-icon-color has-icon-background-color items-justified-center is-style-pill-shape">
+	<!-- wp:social-links {"iconColor":"foreground","iconColorValue":"inherit","className":"items-justified-center is-style-logos-only","layout":{"type":"flex","justifyContent":"center"}} -->
+	<ul class="wp-block-social-links has-icon-color items-justified-center is-style-logos-only">
 		<!-- wp:social-link {"url":"https://facebook.com","service":"facebook"} /-->
+
 		<!-- wp:social-link {"url":"https://twitter.com","service":"twitter"} /-->
+
 		<!-- wp:social-link {"url":"https://instagram.com","service":"instagram"} /-->
 	</ul>
 	<!-- /wp:social-links -->

@@ -95,12 +95,6 @@ function poe_register_block_patterns() {
 			'viewportWidth' => $viewport['wide'],
 			'content'       => poe_get_block_pattern_markup( 'blog/blog-grid-cols-3' ),
 		),
-		'poe/blog-list' => array(
-			'title'         => esc_html__( 'List with featured image, title, excerpt, and post date.', 'poe' ),
-			'categories'    => array( 'poe-blog' ),
-			'viewportWidth' => $viewport['wide'],
-			'content'       => poe_get_block_pattern_markup( 'blog/blog-list' ),
-		),
 		'poe/blog-list-compact' => array(
 			'title'         => esc_html__( 'Compact list with title and post date.', 'poe' ),
 			'categories'    => array( 'poe-blog' ),
@@ -108,7 +102,7 @@ function poe_register_block_patterns() {
 			'content'       => poe_get_block_pattern_markup( 'blog/blog-list-compact' ),
 		),
 		'poe/blog-list-compact-media' => array(
-			'title'         => esc_html__( 'Compact list with featured image, title, and post date.', 'poe' ),
+			'title'         => esc_html__( 'Compact list with a featured image, title, and post date.', 'poe' ),
 			'categories'    => array( 'poe-blog' ),
 			'viewportWidth' => $viewport['wide'],
 			'content'       => poe_get_block_pattern_markup( 'blog/blog-list-compact-media' ),
@@ -132,10 +126,34 @@ function poe_register_block_patterns() {
 		/* FOOTER */
 
 		'poe/footer-horizontal' => array(
-			'title'         => esc_html__( 'Footer with site title and theme credit in a centered paragraph. This is the default footer in the theme.', 'poe' ),
+			'title'         => esc_html__( 'Footer with site title, theme credit and social icons. This is the default footer in the theme.', 'poe' ),
 			'categories'    => array( 'poe-footer' ),
 			'viewportWidth' => $viewport['wide'],
 			'content'       => poe_get_block_pattern_markup( 'footer/footer-horizontal' ),
+		),
+		'poe/footer-horizontal-full' => array(
+			'title'         => esc_html__( 'The default footer in full width with a background color.', 'poe' ),
+			'categories'    => array( 'poe-footer' ),
+			'viewportWidth' => $viewport['wide'],
+			'content'       => poe_get_block_pattern_markup( 'footer/footer-horizontal-full' ),
+		),
+		'poe/footer-cta' => array(
+			'title'         => esc_html__( 'Full width footer with a call to action, site title, theme credit, and social icons.', 'poe' ),
+			'categories'    => array( 'poe-footer' ),
+			'viewportWidth' => $viewport['full'],
+			'content'       => poe_get_block_pattern_markup( 'footer/footer-cta' ),
+		),
+		'poe/footer-contact-cta' => array(
+			'title'         => esc_html__( 'Full width footer with contact details, call to action, site title, theme credit, and social icons.', 'poe' ),
+			'categories'    => array( 'poe-footer' ),
+			'viewportWidth' => $viewport['full'],
+			'content'       => poe_get_block_pattern_markup( 'footer/footer-contact-cta' ),
+		),
+		'poe/footer-contact' => array(
+			'title'         => esc_html__( 'Full width footer with contact details, site title, theme credit, and social icons.', 'poe' ),
+			'categories'    => array( 'poe-footer' ),
+			'viewportWidth' => $viewport['full'],
+			'content'       => poe_get_block_pattern_markup( 'footer/footer-contact' ),
 		),
 
 		/* GENERAL */
@@ -145,12 +163,6 @@ function poe_register_block_patterns() {
 			'categories'    => array( 'poe-general' ),
 			'viewportWidth' => $viewport['full'],
 			'content'       => poe_get_block_pattern_markup( 'general/general-faq' ),
-		),
-		'poe/general-feature-large' => array(
-			'title'         => esc_html__( 'Full-width feature section with headings, text, and buttons.', 'poe' ),
-			'categories'    => array( 'poe-general' ),
-			'viewportWidth' => $viewport['wide'],
-			'content'       => poe_get_block_pattern_markup( 'general/general-feature-large' ),
 		),
 		'poe/general-follow-us-vertical' => array(
 			'title'         => esc_html__( 'Follow us section with a vertical layout.', 'poe' ),
@@ -170,12 +182,6 @@ function poe_register_block_patterns() {
 			'viewportWidth' => $viewport['wide'],
 			'content'       => poe_get_block_pattern_markup( 'general/general-information-banner' ),
 		),
-		'poe/general-media-text-button' => array(
-			'title'         => esc_html__( 'Media and text with button.', 'poe' ),
-			'categories'    => array( 'poe-general' ),
-			'viewportWidth' => $viewport['wide'],
-			'content'       => poe_get_block_pattern_markup( 'general/general-media-text-button' ),
-		),
 		'poe/general-previews-featured' => array(
 			'title'         => esc_html__( 'Large featured section for the latest sticky post on the site.', 'poe' ),
 			'categories'    => array( 'poe-general' ),
@@ -184,7 +190,7 @@ function poe_register_block_patterns() {
 		),
 		'poe/general-previews-columns' => array(
 			'title'         => esc_html__( 'Latest news section with three posts.', 'poe' ),
-			'categories'    => array( 'poe-general' ),
+			'categories'    => array( 'poe-general', 'poe-portfolio' ),
 			'viewportWidth' => $viewport['wide'],
 			'content'       => poe_get_block_pattern_markup( 'general/general-previews-columns' ),
 		),
@@ -194,15 +200,15 @@ function poe_register_block_patterns() {
 			'viewportWidth' => $viewport['wide'],
 			'content'       => poe_get_block_pattern_markup( 'general/general-previews-columns-small' ),
 		),
-		'poe/general-pricing-table' => array(
-			'title'         => esc_html__( 'Pricing table with three tiers.', 'poe' ),
-			'categories'    => array( 'poe-general' ),
+		'poe/general-testimonial-large' => array(
+			'title'         => esc_html__( 'Large testimonial with a single quote.', 'poe' ),
+			'categories'    => array( 'poe-general', 'poe-portfolio' ),
 			'viewportWidth' => $viewport['wide'],
-			'content'       => poe_get_block_pattern_markup( 'general/general-pricing-table' ),
+			'content'       => poe_get_block_pattern_markup( 'general/general-testimonial-large' ),
 		),
 		'poe/general-testimonials-columns' => array(
 			'title'         => esc_html__( 'Testimonials section with three quotes.', 'poe' ),
-			'categories'    => array( 'poe-general', 'poe-restaurant' ),
+			'categories'    => array( 'poe-general', 'poe-portfolio' ),
 			'viewportWidth' => $viewport['wide'],
 			'content'       => poe_get_block_pattern_markup( 'general/general-testimonials-columns' ),
 		),
@@ -210,10 +216,46 @@ function poe_register_block_patterns() {
 		/* HEADER */
 
 		'poe/header-horizontal' => array(
-			'title'         => esc_html__( 'Header with site title and a menu. This is the default header in the theme.', 'poe' ),
+			'title'         => esc_html__( 'Header with site title and menu. This is the default header in the theme.', 'poe' ),
 			'categories'    => array( 'poe-header' ),
 			'viewportWidth' => $viewport['wide'],
 			'content'       => poe_get_block_pattern_markup( 'header/header-horizontal' ),
+		),
+		'poe/header-horizontal-bg' => array(
+			'title'         => esc_html__( 'The default header with a background color.', 'poe' ),
+			'categories'    => array( 'poe-header' ),
+			'viewportWidth' => $viewport['wide'],
+			'content'       => poe_get_block_pattern_markup( 'header/header-horizontal-bg' ),
+		),
+		'poe/header-horizontal-stacked' => array(
+			'title'         => esc_html__( 'Header with site title and menu, stacked on all screen sizes.', 'poe' ),
+			'categories'    => array( 'poe-header' ),
+			'viewportWidth' => $viewport['wide'],
+			'content'       => poe_get_block_pattern_markup( 'header/header-horizontal-stacked' ),
+		),
+		'poe/header-horizontal-button' => array(
+			'title'         => esc_html__( 'Header with site title, menu, and a button.', 'poe' ),
+			'categories'    => array( 'poe-header' ),
+			'viewportWidth' => $viewport['wide'],
+			'content'       => poe_get_block_pattern_markup( 'header/header-horizontal-button' ),
+		),
+		'poe/header-horizontal-social' => array(
+			'title'         => esc_html__( 'Header with site title, menu, and social icons.', 'poe' ),
+			'categories'    => array( 'poe-header' ),
+			'viewportWidth' => $viewport['wide'],
+			'content'       => poe_get_block_pattern_markup( 'header/header-horizontal-social' ),
+		),
+		'poe/header-gigantic-title' => array(
+			'title'         => esc_html__( 'Header with a gigantic site title, menu, and social icons.', 'poe' ),
+			'categories'    => array( 'poe-header' ),
+			'viewportWidth' => $viewport['wide'],
+			'content'       => poe_get_block_pattern_markup( 'header/header-gigantic-title' ),
+		),
+		'poe/header-gigantic-title-bg' => array(
+			'title'         => esc_html__( 'Header with background color and a gigantic site title, menu, and social icons.', 'poe' ),
+			'categories'    => array( 'poe-header' ),
+			'viewportWidth' => $viewport['wide'],
+			'content'       => poe_get_block_pattern_markup( 'header/header-gigantic-title-bg' ),
 		),
 
 		/* HERO */
@@ -230,20 +272,39 @@ function poe_register_block_patterns() {
 			'viewportWidth' => $viewport['full'],
 			'content'       => poe_get_block_pattern_markup( 'hero/hero-cover-group-bg' ),
 		),
-		'poe/hero-text' => array(
-			'title'         => esc_html__( 'Hero with headings, a paragraph of text, and buttons.', 'poe' ),
-			'categories'    => array( 'poe-hero' ),
-			'viewportWidth' => $viewport['content'],
-			'content'       => poe_get_block_pattern_markup( 'hero/hero-text' ),
-		),
-		'poe/hero-text-displaced' => array(
-			'title'         => esc_html__( 'Hero with a large heading to the left and text to the right.', 'poe' ),
-			'categories'    => array( 'poe-hero' ),
-			'viewportWidth' => $viewport['wide'],
-			'content'       => poe_get_block_pattern_markup( 'hero/hero-text-displaced' ),
-		),
 
 		/* PORTFOLIO */
+
+		'poe/portfolio-about-section' => array(
+			'title'         => esc_html__( 'An about section with heading, paragraph and call to action links.', 'poe' ),
+			'categories'    => array( 'poe-portfolio' ),
+			'viewportWidth' => $viewport['wide'],
+			'content'       => poe_get_block_pattern_markup( 'portfolio/portfolio-about-section' ),
+		),
+		'poe/portfolio-filtration' => array(
+			'title'         => esc_html__( 'Portfolio filtration formatted as a row of buttons.', 'poe' ),
+			'categories'    => array( 'poe-portfolio' ),
+			'viewportWidth' => $viewport['wide'],
+			'content'       => poe_get_block_pattern_markup( 'portfolio/portfolio-filtration' ),
+		),
+		'poe/portfolio-features' => array(
+			'title'         => esc_html__( 'Features grid with a title and description.', 'poe' ),
+			'categories'    => array( 'poe-portfolio' ),
+			'viewportWidth' => $viewport['wide'],
+			'content'       => poe_get_block_pattern_markup( 'portfolio/portfolio-features' ),
+		),
+		'poe/portfolio-logo-grid' => array(
+			'title'         => esc_html__( 'Logo grid with a title and description.', 'poe' ),
+			'categories'    => array( 'poe-portfolio' ),
+			'viewportWidth' => $viewport['wide'],
+			'content'       => poe_get_block_pattern_markup( 'portfolio/portfolio-logo-grid' ),
+		),
+		'poe/portfolio-process' => array(
+			'title'         => esc_html__( 'Work process description with multiple steps.', 'poe' ),
+			'categories'    => array( 'poe-portfolio' ),
+			'viewportWidth' => $viewport['wide'],
+			'content'       => poe_get_block_pattern_markup( 'portfolio/portfolio-process' ),
+		),
 
 	) );
 

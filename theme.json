@@ -221,8 +221,9 @@
 			},
 			"typography": {
 				"letter-spacing": {
-					"body": "-0.01em",
+					"body": "-0.011em",
 					"heading": "-0.022em",
+					"gigantic": "-0.033em",
 					"uppercase": "0"
 				},
 				"line-height": {
