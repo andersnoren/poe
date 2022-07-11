@@ -12,7 +12,7 @@
 				},
 				{
 					"slug": "background",
-					"color": "#FFF",
+					"color": "#f9f9f9",
 					"name": "Background"
 				},
 				{
@@ -32,7 +32,7 @@
 				},
 				{
 					"slug": "quaternary",
-					"color": "#f9f9f9",
+					"color": "#fff",
 					"name": "Quaternary"
 				}
 			]

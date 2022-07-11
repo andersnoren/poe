@@ -3,6 +3,10 @@
 	"version": 2,
 	"customTemplates": [
 		{
+			"name": "template-blank",
+			"title": "Blank Canvas"
+		},
+		{
 			"name": "template-no-title",
 			"title": "No Title",
 			"postTypes": [
@@ -10,8 +14,18 @@
 			]
 		},
 		{
-			"name": "template-blank",
-			"title": "Blank Canvas"
+			"name": "template-wide-post-header",
+			"title": "Wide Post Header",
+			"postTypes": [
+				"post"
+			]
+		},
+		{
+			"name": "template-wide-page-header",
+			"title": "Wide Page Header",
+			"postTypes": [
+				"page"
+			]
 		}
 	],
 	"settings": {
