@@ -269,7 +269,7 @@
 							"fontWeight": "100 900",
 							"fontStyle": "oblique 0deg 10deg",
 							"fontStretch": "normal",
-							"src": [ "file:./assets/fonts/inter.var.woff2" ]
+							"src": [ "file:./assets/fonts/inter-var.woff2" ]
 						}
 					]
 				},
@@ -452,7 +452,7 @@
 					}
 				},
 				"typography": {
-					"fontSize": "var(--wp--preset--font-size--small)",
+					"fontSize": "var(--wp--preset--font-size--heading-3)",
 					"lineHeight": "var(--wp--custom--typography--line-height--headings--large)"
 				}
 			},

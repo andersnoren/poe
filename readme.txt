@@ -33,5 +33,12 @@ License: Creative Commons Zero, https://creativecommons.org/publicdomain/zero/1.
 
 == Changelog ==
 
+Version 0.1.1 (2022-07-12)
+-------------------------
+- Minor fixes in the style.css theme description.
+- Fixed the font filename in theme.json having incorrect casing, causing issues on some hosts.
+- Fixed default pull quote font size.
+- Adjusted post header block gap.
+
 Version 0.1 (2022-07-11)
 -------------------------
