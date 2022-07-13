@@ -33,6 +33,11 @@ License: Creative Commons Zero, https://creativecommons.org/publicdomain/zero/1.
 
 == Changelog ==
 
+Version 0.1.2 (2022-07-13)
+-------------------------
+- Updated the screenshot to look less like an ad.
+- Updated the theme description with accurate number of Global Styles variations.
+
 Version 0.1.1 (2022-07-12)
 -------------------------
 - Minor fixes in the style.css theme description.
