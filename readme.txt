@@ -33,6 +33,15 @@ License: Creative Commons Zero, https://creativecommons.org/publicdomain/zero/1.
 
 == Changelog ==
 
+Version 0.2 (2022-07-14)
+-------------------------
+- Moved all of the patterns to the /patterns/ folder, and removed the PHP functions previously used to register patterns.
+- Added home.html, which can be used as a starting point for a home page and is displayed as the front page in the Preview on WordPress.org. It outputs the new demo content pattern.
+- New patterns:
+	- General: Demo content
+	- General: Wide heading with link
+	- Portfolio: Portfolio cases
+
 Version 0.1.2 (2022-07-13)
 -------------------------
 - Updated the screenshot to look less like an ad.
