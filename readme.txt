@@ -33,6 +33,10 @@ License: Creative Commons Zero, https://creativecommons.org/publicdomain/zero/1.
 
 == Changelog ==
 
+Version 0.2.2 (2022-07-XX)
+-------------------------
+- Moved the contents of header.html and footer.html to their respective patterns, and included those patterns with <!-- wp:pattern /--> in the template parts.
+
 Version 0.2.1 (2022-07-15)
 -------------------------
 - Updated the demo content pattern to remove the second section with post previews, preventing duplicated content on home.html by default.

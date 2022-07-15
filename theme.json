@@ -225,7 +225,7 @@
 		"custom": {
 			"spacing": {
 				"baseline": "16px",
-				"small": "min(24px, 6.4vw)",
+				"small": "min(32px, 6.4vw)",
 				"gap": {
 					"horizontal": "clamp( calc( 1.5 * var( --wp--custom--spacing--baseline ) ), 2.222vw, calc( 2 * var( --wp--custom--spacing--baseline ) ) )",
 					"vertical": "clamp( calc( 1.5 * var( --wp--custom--spacing--baseline ) ), 3.333vw, calc( 3 * var( --wp--custom--spacing--baseline ) ) )"
