@@ -22,12 +22,6 @@
 <div style="height:64px" aria-hidden="true" class="wp-block-spacer"></div>
 <!-- /wp:spacer -->
 
-<!-- wp:pattern {"slug":"poe/general-previews-columns"} /-->
-
-<!-- wp:spacer {"height":"64px"} -->
-<div style="height:64px" aria-hidden="true" class="wp-block-spacer"></div>
-<!-- /wp:spacer -->
-
 <!-- wp:pattern {"slug":"poe/portfolio-process"} /-->
 
 <!-- wp:spacer {"height":"64px"} -->

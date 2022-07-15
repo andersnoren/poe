@@ -16,7 +16,15 @@
 			<div class="wp-block-group alignwide">
 				<!-- wp:group {"style":{"spacing":{"blockGap":"2em"}},"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"space-between"}} -->
 				<div class="wp-block-group">
-					<!-- wp:navigation {"ref":24894,"__unstableLocation":"primary","layout":{"type":"flex","justifyContent":"left","orientation":"horizontal"},"style":{"spacing":{"blockGap":"1.5em"}}} /-->
+					<!-- wp:navigation {"__unstableLocation":"primary","layout":{"type":"flex","justifyContent":"left","orientation":"horizontal"},"style":{"spacing":{"blockGap":"1.5em"}}} -->
+
+					<!-- wp:navigation-link {"label":"Work","url":"#","kind":"custom","isTopLevelLink":true} /-->
+
+					<!-- wp:navigation-link {"label":"About","url":"#","kind":"custom","isTopLevelLink":true} /-->
+
+					<!-- wp:navigation-link {"label":"News","url":"#","kind":"custom","isTopLevelLink":true} /-->
+
+					<!-- /wp:navigation -->
 
 					<!-- wp:social-links {"iconColor":"foreground","iconColorValue":"inherit","className":"is-style-logos-only","layout":{"type":"flex","justifyContent":"right"},"style":{"spacing":{"blockGap":{"top":"0.75em","left":"0.75em"}}}} -->
 					<ul class="wp-block-social-links has-icon-color is-style-logos-only">

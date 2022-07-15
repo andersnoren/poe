@@ -33,6 +33,11 @@ License: Creative Commons Zero, https://creativecommons.org/publicdomain/zero/1.
 
 == Changelog ==
 
+Version 0.2.1 (2022-07-15)
+-------------------------
+- Updated the demo content pattern to remove the second section with post previews, preventing duplicated content on home.html by default.
+- Added placeholder links to all menus, and removed reference to menu ID (ref attribute).
+
 Version 0.2 (2022-07-14)
 -------------------------
 - Moved all of the patterns to the /patterns/ folder, and removed the PHP functions previously used to register patterns.

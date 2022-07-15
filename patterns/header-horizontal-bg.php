@@ -19,7 +19,15 @@
 				<div class="wp-block-group alignwide">
 					<!-- wp:site-title {"fontSize":"medium"} /-->
 
-					<!-- wp:navigation {"ref":24894,":"primary","layout":{"type":"flex","justifyContent":"right","orientation":"horizontal"},"style":{"spacing":{"blockGap":"1.5em"}}} /-->
+					<!-- wp:navigation {":"primary","layout":{"type":"flex","justifyContent":"right","orientation":"horizontal"},"style":{"spacing":{"blockGap":"1.5em"}}} -->
+
+					<!-- wp:navigation-link {"label":"Work","url":"#","kind":"custom","isTopLevelLink":true} /-->
+
+					<!-- wp:navigation-link {"label":"About","url":"#","kind":"custom","isTopLevelLink":true} /-->
+
+					<!-- wp:navigation-link {"label":"News","url":"#","kind":"custom","isTopLevelLink":true} /-->
+
+					<!-- /wp:navigation -->
 				</div>
 				<!-- /wp:group -->
 
