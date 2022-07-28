@@ -63,7 +63,9 @@ input, textarea, select, button {
 input, textarea, select {
 	background-color: var( --wp--preset--color--background );
 	border: .1rem solid var( --wp--preset--color--tertiary );
+	box-sizing: border-box;
 	color: var( --wp--preset--color--foreground );
+	max-width: 100%;
 	padding: .5em;
 }
 

@@ -33,9 +33,10 @@ License: Creative Commons Zero, https://creativecommons.org/publicdomain/zero/1.
 
 == Changelog ==
 
-Version 0.2.2 (2022-07-XX)
+Version 0.2.2 (2022-07-28)
 -------------------------
 - Moved the contents of header.html and footer.html to their respective patterns, and included those patterns with <!-- wp:pattern /--> in the template parts.
+- Added a maximum width to inputs, preventing overflow of inputs without plugin styles.
 
 Version 0.2.1 (2022-07-15)
 -------------------------
