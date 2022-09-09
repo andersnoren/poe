@@ -33,6 +33,10 @@ License: Creative Commons Zero, https://creativecommons.org/publicdomain/zero/1.
 
 == Changelog ==
 
+Version 0.2.3 (2022-09-09)
+-------------------------
+- Fixed a blockGap issue causing missing gutters in columns when running the Gutenberg plugin.
+
 Version 0.2.2 (2022-07-28)
 -------------------------
 - Moved the contents of header.html and footer.html to their respective patterns, and included those patterns with <!-- wp:pattern /--> in the template parts.
