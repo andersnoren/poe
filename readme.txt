@@ -33,6 +33,10 @@ License: Creative Commons Zero, https://creativecommons.org/publicdomain/zero/1.
 
 == Changelog ==
 
+Version 0.2.5 (2022-09-27)
+-------------------------
+- Updated <!-- wp:template-part --/> to omit the "theme":"poe" code, fixing issues when modifying template parts in child themes (thanks, @janboddez).
+
 Version 0.2.4 (2022-09-09)
 -------------------------
 - Another stab at the blockGap issue, now by removing spaces around the values inside var() which seem to trip up Gutenberg.
