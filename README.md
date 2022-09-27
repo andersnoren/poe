@@ -2,7 +2,7 @@
 
 Poe is a clean, flexible and fast block theme built with portfolios and blogs in mind. Its default look is a stylish white on black color scheme with yellow accents and clean sans-serif typography, but Poe is built from the ground up for flexibility. It includes ten different theme styles to choose from, and over 30 different block patterns that you can use to quickly create unique page layouts.
 
-![Poe](https://github.com/andersnoren/poe/blob/master/screenshot.png)
+![Poe](https://github.com/andersnoren/poe/blob/main/screenshot.png)
 
 You can download the latest stable release of Poe [from WordPress.org](https://wordpress.org/themes/poe/).
 
