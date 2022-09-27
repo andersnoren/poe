@@ -24,5 +24,5 @@ Do you want to support the continued development of Poe? You can send me a PayPa
 - License: [GPLv2](https://www.gnu.org/licenses/gpl-2.0.html) or later
 
 ## Resources
-- [About Poe](https://andersnoren.se/teman/bjork-wordpress-theme/)
+- [About Poe](https://andersnoren.se/teman/poe-wordpress-theme/)
 - [Poe demo site](https://andersnoren.se/themes/poe/)
