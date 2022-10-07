@@ -33,6 +33,10 @@ License: Creative Commons Zero, https://creativecommons.org/publicdomain/zero/1.
 
 == Changelog ==
 
+Version 0.2.6 (2022-10-07)
+-------------------------
+- Removed index.php, since it's no longer needed to pass the WordPress.org automatic theme review.
+
 Version 0.2.5 (2022-09-27)
 -------------------------
 - Updated <!-- wp:template-part --/> to omit the "theme":"poe" code, fixing issues when modifying template parts in child themes (thanks, @janboddez).
