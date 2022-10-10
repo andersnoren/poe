@@ -33,6 +33,10 @@ License: Creative Commons Zero, https://creativecommons.org/publicdomain/zero/1.
 
 == Changelog ==
 
+Version 0.3 (2022-10-10)
+-------------------------
+- Replaced the home.html template with front-page.html, since the blog archive is unusable when home.html is included in the theme. This could cause issues if you don't have a page set as "Homepage" on Settings → Reading.
+
 Version 0.2.6 (2022-10-07)
 -------------------------
 - Removed index.php, since it's no longer needed to pass the WordPress.org automatic theme review.
