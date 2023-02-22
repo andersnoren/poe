@@ -33,8 +33,6 @@ add_action( 'wp_enqueue_scripts', 'poe_styles' );
 
 function poe_register_block_patterns() {
 
-	if ( ! function_exists( 'register_block_pattern_category' ) ) return;
-
 	// The block pattern categories included in Poe.
 	$poe_block_pattern_categories = apply_filters( 'poe_block_pattern_categories', array(
 		'poe-blog' => array(
@@ -81,8 +79,6 @@ add_action( 'init', 'poe_register_block_patterns' );
 
 if ( ! function_exists( 'poe_register_block_styles' ) ) :
 	function poe_register_block_styles() {
-
-		if ( ! function_exists( 'register_block_style' ) ) return;
 
 		// Button: Arrow
 		register_block_style( 'core/button', array(

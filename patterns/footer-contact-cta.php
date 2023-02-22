@@ -97,7 +97,7 @@
 						<!-- wp:group {"align":"wide","style":{"spacing":{"blockGap":"0.5em"}},"layout":{"type":"flex","justifyContent":"left"}} -->
 						<div class="wp-block-group alignwide">
 							<!-- wp:paragraph {"fontSize":"small"} -->
-							<p class="has-small-font-size">© 2022</p>
+							<p class="has-small-font-size">© 2023</p>
 							<!-- /wp:paragraph -->
 
 							<!-- wp:site-title {"level":0,"fontSize":"small"} /-->
