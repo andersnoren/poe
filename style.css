@@ -2,7 +2,7 @@
 
 	Theme Name: Poe
     Text Domain: poe
-	Version: 0.4
+	Version: 0.4.1
 	Description: Poe is a clean, flexible and fast block theme built with portfolios and blogs in mind. Its default look is a stylish white on black color scheme with yellow accents and clean sans-serif typography, but Poe is built from the ground up for flexibility. It includes ten different theme styles to choose from, and over 30 different block patterns that you can use to quickly create unique page layouts.
 	Tags: blog, portfolio, grid-layout, one-column, two-columns, three-columns, four-columns, custom-background, custom-colors, custom-logo, custom-menu, editor-style, featured-images, sticky-post, threaded-comments, translation-ready, block-styles, wide-blocks, full-site-editing
 	Author: Anders Norén
@@ -11,7 +11,7 @@
 	License: GNU General Public License version 2.0
 	License URI: http://www.gnu.org/licenses/gpl-2.0.html
 	Requires PHP: 5.6
-	Tested up to: 6.1
+	Tested up to: 6.3
 
 	All files, unless otherwise stated, are released under the GNU General Public License
 	version 2.0 (http://www.gnu.org/licenses/gpl-2.0.html)
@@ -243,10 +243,6 @@ ol.wp-block-comment-template {
 }
 
 /* Block: Quote ------------------------------ */
-
-blockquote {
-	margin: 0;
-}
 
 blockquote p:first-child { margin-top: 0; }
 blockquote p:last-child { margin-bottom: 0; }

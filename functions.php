@@ -5,11 +5,7 @@
 --------------------------------------------------------------------------------------------------- */
 
 function poe_setup() {
-
-	add_theme_support( 'wp-block-styles' );
-
 	add_editor_style( 'style.css' );
-
 }
 add_action( 'after_setup_theme', 'poe_setup' );
 
@@ -19,9 +15,7 @@ add_action( 'after_setup_theme', 'poe_setup' );
 --------------------------------------------------------------------------------------------------- */
 
 function poe_styles() {
-
 	wp_enqueue_style( 'poe-styles', get_theme_file_uri( '/style.css' ), array(), wp_get_theme( 'poe' )->get( 'Version' ) );
-
 }
 add_action( 'wp_enqueue_scripts', 'poe_styles' );
 

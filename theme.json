@@ -611,8 +611,11 @@
 			},
 			"core/quote": {
 				"border": {
-					"width": "1px",
-					"color": "var(--wp--preset--color--tertiary)"
+					"left": {
+						"color": "var(--wp--preset--color--tertiary)",
+						"style": "solid",
+						"width": "1px"
+					}
 				},
 				"spacing": {
 					"padding": {
@@ -733,6 +736,13 @@
 				},
 				"typography": {
 					"fontSize": "var(--wp--preset--font-size--small)"
+				}
+			},
+			"cite": {
+				"typography": {
+					"fontSize": "var(--wp--preset--font-size--medium)",
+					"fontStyle": "normal",
+					"textTransform": "none"
 				}
 			},
 			"heading": {
