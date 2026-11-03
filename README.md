@@ -19,10 +19,10 @@ Keep in mind that I maintain my themes in my spare time. Even though I deeply ap
 Do you want to support the continued development of Poe? You can send me a PayPal donation [here](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=anders%40andersnoren%2ese&lc=US&item_name=Free%20WordPress%20Themes%20from%20Anders%20Noren&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted).
 
 ## Requirements
-- WordPress 6.0+
+- WordPress 6.2+
 - PHP 5.6+
 - License: [GPLv2](https://www.gnu.org/licenses/gpl-2.0.html) or later
 
 ## Resources
 - [About Poe](https://andersnoren.se/teman/poe-wordpress-theme/)
-- [Poe demo site](https://andersnoren.se/themes/poe/)
+- [Poe demo site](https://poe.andersnoren.se)

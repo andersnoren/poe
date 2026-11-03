@@ -2,16 +2,17 @@
 
 	Theme Name: Poe
     Text Domain: poe
-	Version: 0.4.2
-	Description: Poe is a clean, flexible and fast block theme built with portfolios and blogs in mind. Its default look is a stylish white on black color scheme with yellow accents and clean sans-serif typography, but Poe is built from the ground up for flexibility. It includes ten different theme styles to choose from, and over 30 different block patterns that you can use to quickly create unique page layouts.
+	Version: 1.0.0
+	Description: Poe is a clean, flexible and fast block theme built with portfolios and blogs in mind. Its default look is a stylish white on black color scheme with yellow accents and clean sans-serif typography, but Poe is built from the ground up for flexibility. It includes ten different theme styles to choose from, and over 30 different block patterns that you can use to quickly create unique page layouts. Demo: https://poe.andersnoren.se
 	Tags: blog, portfolio, grid-layout, one-column, two-columns, three-columns, four-columns, custom-background, custom-colors, custom-logo, custom-menu, editor-style, featured-images, sticky-post, threaded-comments, translation-ready, block-styles, wide-blocks, full-site-editing
 	Author: Anders Norén
 	Author URI: https://andersnoren.se
 	Theme URI: https://andersnoren.se/teman/poe-wordpress-theme/
 	License: GNU General Public License version 2.0
 	License URI: http://www.gnu.org/licenses/gpl-2.0.html
+	Requires at least: 6.2
 	Requires PHP: 5.6
-	Tested up to: 6.5
+	Tested up to: 7.1
 
 	All files, unless otherwise stated, are released under the GNU General Public License
 	version 2.0 (http://www.gnu.org/licenses/gpl-2.0.html)

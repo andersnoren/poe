@@ -3,17 +3,39 @@ Contributors: Anlino
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=anders%40andersnoren%2ese&lc=US&item_name=Free%20WordPress%20Themes%20from%20Anders%20Noren&currency_code=USD&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted
 Requires at least: 6.2
 Requires PHP: 5.6
-Tested up to: 6.5
+Tested up to: 7.1
 Stable tag: trunk
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
+A clean, flexible and fast block theme built with portfolios and blogs in mind.
+
+
+== Description ==
+
+Poe is a clean, flexible and fast block theme built with portfolios and blogs in mind. Its default look is a stylish white on black color scheme with yellow accents and clean sans-serif typography, but Poe is built from the ground up for flexibility. It includes ten different theme styles to choose from, and over 30 different block patterns that you can use to quickly create unique page layouts. Demo: https://poe.andersnoren.se
+
 
 == Installation ==
 
-1. Make sure you're running WordPress 6.1 or later.
+1. Make sure you're running WordPress 6.2 or later.
 2. Upload the theme.
 3. Activate the theme.
+
+
+== Frequently Asked Questions ==
+
+= Where can I get support? =
+Post your question in the Poe support forum on WordPress.org: https://wordpress.org/support/theme/poe/
+
+= Where can I request a feature or report a bug? =
+Open an issue in the Poe GitHub repository: https://github.com/andersnoren/poe
+
+
+== Copyright ==
+
+Poe WordPress Theme, Copyright 2022-2026 Anders Norén
+Poe is distributed under the terms of the GNU GPL.
 
 
 == Licenses ==
@@ -32,6 +54,15 @@ License: Creative Commons Zero, https://creativecommons.org/publicdomain/zero/1.
 
 
 == Changelog ==
+
+Version 1.0.0 (2026-11-03)
+-------------------------
+- Poe is now version 1.0.0, reflecting its status as a stable theme. No breaking changes.
+- Tested with WordPress 7.1.
+- Bumped the copyright year in the footer patterns to 2026.
+- Added the demo URL to the theme description.
+- Added the Requires at least header to style.css.
+- Added Description, FAQ, Copyright and Upgrade Notice sections to the readme, and updated the minimum WordPress version in the installation instructions to 6.2.
 
 Version 0.4.2 (2024-05-03)
 -------------------------
@@ -108,3 +139,9 @@ Version 0.1.1 (2022-07-12)
 
 Version 0.1 (2022-07-11)
 -------------------------
+
+
+== Upgrade Notice ==
+
+= 1.0.0 =
+Tested with WordPress 7.1. Poe is now version 1.0.0, reflecting its status as a stable theme. No breaking changes.
